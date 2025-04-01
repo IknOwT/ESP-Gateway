@@ -1,0 +1,307 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+l�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  1 2025 09:54:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b888h ( 47240) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001b8b0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001b8d4 vaddr=3ffb0000 size=02424h (  9252) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001dd00 vaddr=40080000 size=02318h (  8984) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17054h ( 94292) map[0m
+[0;32mI (157) esp_image: segment 5: paddr=0003707c vaddr=40082318 size=0c02ch ( 49196) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (194) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) app_init: Application information:[0m
+[0;32mI (202) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (206) app_init: App version:      v5.4[0m
+[0;32mI (210) app_init: Compile time:     Apr  1 2025 16:15:17[0m
+[0;32mI (215) app_init: ELF file SHA256:  33011710f...[0m
+[0;32mI (219) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (223) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (227) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (231) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (235) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (241) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (246) heap_init: At 3FFB2D48 len 0002D2B8 (180 KiB): DRAM[0m
+[0;32mI (251) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (257) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (262) heap_init: At 4008E344 len 00011CBC (71 KiB): IRAM[0m
+[0;32mI (269) spi_flash: detected chip: gd[0m
+[0;32mI (271) spi_flash: flash io: dio[0m
+[0;33mW (274) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (286) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (296) main_task: Started on CPU0[0m
+[0;32mI (306) main_task: Calling app_main()[0m
+[0;32mI (306) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (306) main_task: Returned from app_main()[0m
+[1;31mE (306) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[1;31mE (346) i2c_control.c: Failed to send measurement command to SCD41: ESP_FAIL[0m
+[0;32mI (5346) i2c_control.c: Reading sensor data...[0m
+[0;32mI (5346) i2c_control.c: CO2: 1058 ppm[0m
+[0;32mI (5346) i2c_control.c: Temperature: 28.46°C[0m
+[0;32mI (5346) i2c_control.c: Humidity: 45.77%[0m
+[0;32mI (5346) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (10326) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (10356) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (15356) i2c_control.c: Reading sensor data...[0m
+[0;32mI (15356) i2c_control.c: CO2: 1071 ppm[0m
+[0;32mI (15356) i2c_control.c: Temperature: 28.51°C[0m
+[0;32mI (15356) i2c_control.c: Humidity: 45.74%[0m
+[0;32mI (15356) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (20336) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (20366) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (25366) i2c_control.c: Reading sensor data...[0m
+[0;32mI (25366) i2c_control.c: CO2: 1029 ppm[0m
+[0;32mI (25366) i2c_control.c: Temperature: 28.58°C[0m
+[0;32mI (25366) i2c_control.c: Humidity: 45.72%[0m
+[0;32mI (25366) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (30346) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (30376) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (35376) i2c_control.c: Reading sensor data...[0m
+[0;32mI (35376) i2c_control.c: CO2: 1058 ppm[0m
+[0;32mI (35376) i2c_control.c: Temperature: 28.64°C[0m
+[0;32mI (35376) i2c_control.c: Humidity: 45.55%[0m
+[0;32mI (35376) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (40356) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (40386) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (45386) i2c_control.c: Reading sensor data...[0m
+[0;32mI (45386) i2c_control.c: CO2: 1036 ppm[0m
+[0;32mI (45386) i2c_control.c: Temperature: 28.66°C[0m
+[0;32mI (45386) i2c_control.c: Humidity: 45.57%[0m
+[0;32mI (45386) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (50366) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (50396) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (55396) i2c_control.c: Reading sensor data...[0m
+[0;32mI (55396) i2c_control.c: CO2: 1033 ppm[0m
+[0;32mI (55396) i2c_control.c: Temperature: 28.69°C[0m
+[0;32mI (55396) i2c_control.c: Humidity: 45.44%[0m
+[0;32mI (55396) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (60376) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (60406) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (65406) i2c_control.c: Reading sensor data...[0m
+[0;32mI (65406) i2c_control.c: CO2: 1040 ppm[0m
+[0;32mI (65406) i2c_control.c: Temperature: 28.68°C[0m
+[0;32mI (65406) i2c_control.c: Humidity: 45.58%[0m
+[0;32mI (65406) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (70386) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (70416) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (75416) i2c_control.c: Reading sensor data...[0m
+[0;32mI (75416) i2c_control.c: CO2: 1048 ppm[0m
+[0;32mI (75416) i2c_control.c: Temperature: 28.72°C[0m
+[0;32mI (75416) i2c_control.c: Humidity: 45.56%[0m
+[0;32mI (75416) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (80396) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (80426) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (85426) i2c_control.c: Reading sensor data...[0m
+[0;32mI (85426) i2c_control.c: CO2: 1034 ppm[0m
+[0;32mI (85426) i2c_control.c: Temperature: 28.72°C[0m
+[0;32mI (85426) i2c_control.c: Humidity: 45.46%[0m
+[0;32mI (85426) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (90406) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (90436) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (95436) i2c_control.c: Reading sensor data...[0m
+[0;32mI (95436) i2c_control.c: CO2: 1015 ppm[0m
+[0;32mI (95436) i2c_control.c: Temperature: 28.77°C[0m
+[0;32mI (95436) i2c_control.c: Humidity: 45.37%[0m
+[0;32mI (95436) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (100416) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (100446) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (105446) i2c_control.c: Reading sensor data...[0m
+[0;32mI (105446) i2c_control.c: CO2: 1021 ppm[0m
+[0;32mI (105446) i2c_control.c: Temperature: 28.73°C[0m
+[0;32mI (105446) i2c_control.c: Humidity: 45.50%[0m
+[0;32mI (105446) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (110426) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (110456) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (115456) i2c_control.c: Reading sensor data...[0m
+[0;32mI (115456) i2c_control.c: CO2: 1048 ppm[0m
+[0;32mI (115456) i2c_control.c: Temperature: 28.76°C[0m
+[0;32mI (115456) i2c_control.c: Humidity: 45.54%[0m
+[0;32mI (115456) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (120436) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (120466) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (125466) i2c_control.c: Reading sensor data...[0m
+[0;32mI (125466) i2c_control.c: CO2: 1034 ppm[0m
+[0;32mI (125466) i2c_control.c: Temperature: 28.80°C[0m
+[0;32mI (125466) i2c_control.c: Humidity: 45.45%[0m
+[0;32mI (125466) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (130446) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (130476) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (135476) i2c_control.c: Reading sensor data...[0m
+[0;32mI (135476) i2c_control.c: CO2: 1041 ppm[0m
+[0;32mI (135476) i2c_control.c: Temperature: 28.75°C[0m
+[0;32mI (135476) i2c_control.c: Humidity: 45.36%[0m
+[0;32mI (135476) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (140456) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (140486) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (145486) i2c_control.c: Reading sensor data...[0m
+[0;32mI (145486) i2c_control.c: CO2: 1037 ppm[0m
+[0;32mI (145486) i2c_control.c: Temperature: 28.75°C[0m
+[0;32mI (145486) i2c_control.c: Humidity: 45.25%[0m
+[0;32mI (145486) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (150466) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (150496) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (155496) i2c_control.c: Reading sensor data...[0m
+[0;32mI (155496) i2c_control.c: CO2: 1016 ppm[0m
+[0;32mI (155496) i2c_control.c: Temperature: 28.80°C[0m
+[0;32mI (155496) i2c_control.c: Humidity: 45.06%[0m
+[0;32mI (155496) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (160476) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (160506) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (165506) i2c_control.c: Reading sensor data...[0m
+[0;32mI (165506) i2c_control.c: CO2: 1006 ppm[0m
+[0;32mI (165506) i2c_control.c: Temperature: 28.80°C[0m
+[0;32mI (165506) i2c_control.c: Humidity: 45.04%[0m
+[0;32mI (165506) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (170486) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (170516) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (175516) i2c_control.c: Reading sensor data...[0m
+[0;32mI (175516) i2c_control.c: CO2: 1025 ppm[0m
+[0;32mI (175516) i2c_control.c: Temperature: 28.85°C[0m
+[0;32mI (175516) i2c_control.c: Humidity: 44.98%[0m
+[0;32mI (175516) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (180496) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (180526) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (185526) i2c_control.c: Reading sensor data...[0m
+[0;32mI (185526) i2c_control.c: CO2: 1021 ppm[0m
+[0;32mI (185526) i2c_control.c: Temperature: 28.86°C[0m
+[0;32mI (185526) i2c_control.c: Humidity: 44.93%[0m
+[0;32mI (185526) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (190506) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (190536) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (195536) i2c_control.c: Reading sensor data...[0m
+[0;32mI (195536) i2c_control.c: CO2: 1054 ppm[0m
+[0;32mI (195536) i2c_control.c: Temperature: 28.82°C[0m
+[0;32mI (195536) i2c_control.c: Humidity: 44.86%[0m
+[0;32mI (195536) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (200516) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (200546) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (205546) i2c_control.c: Reading sensor data...[0m
+[0;32mI (205546) i2c_control.c: CO2: 1055 ppm[0m
+[0;32mI (205546) i2c_control.c: Temperature: 28.81°C[0m
+[0;32mI (205546) i2c_control.c: Humidity: 44.76%[0m
+[0;32mI (205546) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (210526) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (210556) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (215556) i2c_control.c: Reading sensor data...[0m
+[0;32mI (215556) i2c_control.c: CO2: 999 ppm[0m
+[0;32mI (215556) i2c_control.c: Temperature: 28.84°C[0m
+[0;32mI (215556) i2c_control.c: Humidity: 44.91%[0m
+[0;32mI (215556) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (220536) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (220566) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (225566) i2c_control.c: Reading sensor data...[0m
+[0;32mI (225566) i2c_control.c: CO2: 1049 ppm[0m
+[0;32mI (225566) i2c_control.c: Temperature: 28.86°C[0m
+[0;32mI (225566) i2c_control.c: Humidity: 44.88%[0m
+[0;32mI (225566) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (230546) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (230576) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (235576) i2c_control.c: Reading sensor data...[0m
+[0;32mI (235576) i2c_control.c: CO2: 1015 ppm[0m
+[0;32mI (235576) i2c_control.c: Temperature: 28.83°C[0m
+[0;32mI (235576) i2c_control.c: Humidity: 44.96%[0m
+[0;32mI (235576) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (240556) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (240586) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (245586) i2c_control.c: Reading sensor data...[0m
+[0;32mI (245586) i2c_control.c: CO2: 1065 ppm[0m
+[0;32mI (245586) i2c_control.c: Temperature: 28.85°C[0m
+[0;32mI (245586) i2c_control.c: Humidity: 44.96%[0m
+[0;32mI (245586) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (250566) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (250596) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (255596) i2c_control.c: Reading sensor data...[0m
+[0;32mI (255596) i2c_control.c: CO2: 1059 ppm[0m
+[0;32mI (255596) i2c_control.c: Temperature: 28.87°C[0m
+[0;32mI (255596) i2c_control.c: Humidity: 44.82%[0m
+[0;32mI (255596) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (260576) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (260606) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (265606) i2c_control.c: Reading sensor data...[0m
+[0;32mI (265606) i2c_control.c: CO2: 1048 ppm[0m
+[0;32mI (265606) i2c_control.c: Temperature: 28.90°C[0m
+[0;32mI (265606) i2c_control.c: Humidity: 44.77%[0m
+[0;32mI (265606) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (270586) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (270616) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (275616) i2c_control.c: Reading sensor data...[0m
+[0;32mI (275616) i2c_control.c: CO2: 1064 ppm[0m
+[0;32mI (275616) i2c_control.c: Temperature: 28.90°C[0m
+[0;32mI (275616) i2c_control.c: Humidity: 44.78%[0m
+[0;32mI (275616) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (280596) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (280626) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (285626) i2c_control.c: Reading sensor data...[0m
+[0;32mI (285626) i2c_control.c: CO2: 1035 ppm[0m
+[0;32mI (285626) i2c_control.c: Temperature: 28.91°C[0m
+[0;32mI (285626) i2c_control.c: Humidity: 44.62%[0m
+[0;32mI (285626) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (290606) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (290636) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (295636) i2c_control.c: Reading sensor data...[0m
+[0;32mI (295636) i2c_control.c: CO2: 1044 ppm[0m
+[0;32mI (295636) i2c_control.c: Temperature: 28.95°C[0m
+[0;32mI (295636) i2c_control.c: Humidity: 44.56%[0m
+[0;32mI (295636) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (300616) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (300646) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (305646) i2c_control.c: Reading sensor data...[0m
+[0;32mI (305646) i2c_control.c: CO2: 1029 ppm[0m
+[0;32mI (305646) i2c_control.c: Temperature: 28.96°C[0m
+[0;32mI (305646) i2c_control.c: Humidity: 44.45%[0m
+[0;32mI (305646) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (310626) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (310656) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (315656) i2c_control.c: Reading sensor data...[0m
+[0;32mI (315656) i2c_control.c: CO2: 1004 ppm[0m
+[0;32mI (315656) i2c_control.c: Temperature: 28.96°C[0m
+[0;32mI (315656) i2c_control.c: Humidity: 44.47%[0m
+[0;32mI (315656) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (320636) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (320666) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (325666) i2c_control.c: Reading sensor data...[0m
+[0;32mI (325666) i2c_control.c: CO2: 1035 ppm[0m
+[0;32mI (325666) i2c_control.c: Temperature: 28.98°C[0m
+[0;32mI (325666) i2c_control.c: Humidity: 44.43%[0m
+[0;32mI (325666) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (330646) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (330676) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (335676) i2c_control.c: Reading sensor data...[0m
+[0;32mI (335676) i2c_control.c: CO2: 1031 ppm[0m
+[0;32mI (335676) i2c_control.c: Temperature: 28.97°C[0m
+[0;32mI (335676) i2c_control.c: Humidity: 44.45%[0m
+[0;32mI (335676) i2c_control.c: SCD41 power down command sent successfully[0m
+[1;31mE (340656) i2c_control.c: Failed to send wake up command: ESP_FAIL[0m
+[0;32mI (340686) i2c_control.c: SCD41 performing measurements...[0m
