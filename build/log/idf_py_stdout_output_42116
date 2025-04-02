@@ -1,0 +1,1550 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf80h ( 49024) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=0001bfa8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bfcc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e418 vaddr=40080000 size=01c00h (  7168) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=18654h ( 99924) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003867c vaddr=40081c00 size=0c8d4h ( 51412) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu start user code[0m
+[0;32mI (206) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:11:05[0m
+[0;32mI (219) app_init: ELF file SHA256:  078073552...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (267) heap_init: At 4008E4D4 len 00011B2C (70 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: gd[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (368) adc_control.c: Average ADC Voltage: 17.050 V[0m
+[0;32mI (368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+
+***ERROR*** A stack overflow in task mems_task has been detected.
+
+
+Backtrace: 0x400819f9:0x3ffb8480 0x40086c51:0x3ffb84a0 0x4008794a:0x3ffb84c0 0x400889bf:0x3ffb8540 0x40087a54:0x3ffb8560 0x40087a06:0x52a652a6 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 078073552
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf80h ( 49024) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bfa8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bfcc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e418 vaddr=40080000 size=01c00h (  7168) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=18654h ( 99924) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003867c vaddr=40081c00 size=0c8d4h ( 51412) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (206) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:11:05[0m
+[0;32mI (219) app_init: ELF file SHA256:  078073552...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008E4D4 len 00011B2C (70 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: gd[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (368) adc_control.c: Average ADC Voltage: 17.050 V[0m
+[0;32mI (368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+
+***ERROR*** A stack overflow in task mems_task has been detected.
+
+
+Backtrace: 0x400819f9:0x3ffb8480 0x40086c51:0x3ffb84a0 0x4008794a:0x3ffb84c0 0x400889bf:0x3ffb8540 0x40087a54:0x3ffb8560 0x40087a06:0x52a552a6 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 078073552
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf80h ( 49024) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bfa8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bfcc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e418 vaddr=40080000 size=01c00h (  7168) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=18654h ( 99924) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003867c vaddr=40081c00 size=0c8d4h ( 51412) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:11:05[0m
+[0;32mI (219) app_init: ELF file SHA256:  078073552...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008E4D4 len 00011B2C (70 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: gd[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (368) adc_control.c: Average ADC Voltage: 17.050 V[0m
+[0;32mI (368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+
+***ERROR*** A stack overflow in task mems_task has been detected.
+
+
+Backtrace: 0x400819f9:0x3ffb8480 0x40086c51:0x3ffb84a0 0x4008794a:0x3ffb84c0 0x400889bf:0x3ffb8540 0x40087a54:0x3ffb8560 0x40087a06:0x52aa52a6 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 078073552
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf80h ( 49024) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bfa8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bfcc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e418 vaddr=40080000 size=01c00h (  7168) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=18654h ( 99924) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003867c vaddr=40081c00 size=0c8d4h ( 51412) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (206) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:11:05[0m
+[0;32mI (219) app_init: ELF file SHA256:  078073552...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008E4D4 len 00011B2C (70 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: gd[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (368) adc_control.c: Average ADC Voltage: 17.050 V[0m
+[0;32mI (368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+
+***ERROR*** A stack overflow in task mems_task has been detected.
+
+
+Backtrace: 0x400819f9:0x3ffb8480 0x40086c51:0x3ffb84a0 0x4008794a:0x3ffb84c0 0x400889bf:0x3ffb8540 0x40087a54:0x3ffb8560 0x40087a06:0x52a452a5 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 078073552
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf80h ( 49024) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bfa8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bfcc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e418 vaddr=40080000 size=01c00h (  7168) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=18654h ( 99924) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003867c vaddr=40081c00 size=0c8d4h ( 51412) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:11:05[0m
+[0;32mI (219) app_init: ELF file SHA256:  078073552...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008E4D4 len 00011B2C (70 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: gd[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (368) adc_control.c: Average ADC Voltage: 17.051 V[0m
+[0;32mI (368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+
+***ERROR*** A stack overflow in task mems_task has been detected.
+
+
+Backtrace: 0x400819f9:0x3ffb8480 0x40086c51:0x3ffb84a0 0x4008794a:0x3ffb84c0 0x400889bf:0x3ffb8540 0x40087a54:0x3ffb8560 0x40087a06:0x52a352a9 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 078073552
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf80h ( 49024) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bfa8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bfcc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e418 vaddr=40080000 size=01c00h (  7168) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=18654h ( 99924) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003867c vaddr=40081c00 size=0c8d4h ( 51412) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:11:05[0m
+[0;32mI (219) app_init: ELF file SHA256:  078073552...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008E4D4 len 00011B2C (70 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: gd[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (368) adc_control.c: Average ADC Voltage: 17.050 V[0m
+[0;32mI (368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+
+***ERROR*** A stack overflow in task mems_task has been detected.
+
+
+Backtrace: 0x400819f9:0x3ffb8480 0x40086c51:0x3ffb84a0 0x4008794a:0x3ffb84c0 0x400889bf:0x3ffb8540 0x40087a54:0x3ffb8560 0x40087a06:0x52a652a5 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 078073552
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf80h ( 49024) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bfa8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bfcc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e418 vaddr=40080000 size=01c00h (  7168) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=18654h ( 99924) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003867c vaddr=40081c00 size=0c8d4h ( 51412) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:11:05[0m
+[0;32mI (219) app_init: ELF file SHA256:  078073552...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008E4D4 len 00011B2C (70 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: gd[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (368) adc_control.c: Average ADC Voltage: 17.051 V[0m
+[0;32mI (368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+
+***ERROR*** A stack overflow in task mems_task has been detected.
+
+
+Backtrace: 0x400819f9:0x3ffb8480 0x40086c51:0x3ffb84a0 0x4008794a:0x3ffb84c0 0x400889bf:0x3ffb8540 0x40087a54:0x3ffb8560 0x40087a06:0x52a852a7 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 078073552
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf80h ( 49024) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bfa8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bfcc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e418 vaddr=40080000 size=01c00h (  7168) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=18654h ( 99924) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003867c vaddr=40081c00 size=0c8d4h ( 51412) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:11:05[0m
+[0;32mI (219) app_init: ELF file SHA256:  078073552...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008E4D4 len 00011B2C (70 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: gd[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (368) adc_control.c: Average ADC Voltage: 17.050 V[0m
+[0;32mI (368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+
+***ERROR*** A stack overflow in task mems_task has been detected.
+
+
+Backtrace: 0x400819f9:0x3ffb8480 0x40086c51:0x3ffb84a0 0x4008794a:0x3ffb84c0 0x400889bf:0x3ffb8540 0x40087a54:0x3ffb8560 0x40087a06:0x52a652a7 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 078073552
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf80h ( 49024) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bfa8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bfcc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e418 vaddr=40080000 size=01c00h (  7168) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=18654h ( 99924) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003867c vaddr=40081c00 size=0c8d4h ( 51412) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:11:05[0m
+[0;32mI (219) app_init: ELF file SHA256:  078073552...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008E4D4 len 00011B2C (70 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: gd[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (368) adc_control.c: Average ADC Voltage: 17.051 V[0m
+[0;32mI (368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+
+***ERROR*** A stack overflow in task mems_task has been detected.
+
+
+Backtrace: 0x400819f9:0x3ffb8480 0x40086c51:0x3ffb84a0 0x4008794a:0x3ffb84c0 0x400889bf:0x3ffb8540 0x40087a54:0x3ffb8560 0x40087a06:0x52a952a6 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 078073552
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf80h ( 49024) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bfa8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bfcc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e418 vaddr=40080000 size=01c00h (  7168) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=18654h ( 99924) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003867c vaddr=40081c00 size=0c8d4h ( 51412) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:11:05[0m
+[0;32mI (219) app_init: ELF file SHA256:  078073552...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008E4D4 len 00011B2C (70 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: gd[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (368) adc_control.c: Average ADC Voltage: 17.051 V[0m
+[0;32mI (368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+
+***ERROR*** A stack overflow in task mems_task has been detected.
+
+
+Backtrace: 0x400819f9:0x3ffb8480 0x40086c51:0x3ffb84a0 0x4008794a:0x3ffb84c0 0x400889bf:0x3ffb8540 0x40087a54:0x3ffb8560 0x40087a06:0x52a552a6 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 078073552
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf80h ( 49024) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bfa8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bfcc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e418 vaddr=40080000 size=01c00h (  7168) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=18654h ( 99924) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003867c vaddr=40081c00 size=0c8d4h ( 51412) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:11:05[0m
+[0;32mI (219) app_init: ELF file SHA256:  078073552...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008E4D4 len 00011B2C (70 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: gd[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (368) adc_control.c: Average ADC Voltage: 17.050 V[0m
+[0;32mI (368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+
+***ERROR*** A stack overflow in task mems_task has been detected.
+
+
+Backtrace: 0x400819f9:0x3ffb8480 0x40086c51:0x3ffb84a0 0x4008794a:0x3ffb84c0 0x400889bf:0x3ffb8540 0x40087a54:0x3ffb8560 0x40087a06:0x52a652a6 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 078073552
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+I (32) boot: chip revision: v3.1
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf80h ( 49024) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bfa8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bfcc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e418 vaddr=40080000 size=01c00h (  7168) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=18654h ( 99924) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003867c vaddr=40081c00 size=0c8d4h ( 51412) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:11:05[0m
+[0;32mI (219) app_init: ELF file SHA256:  078073552...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008E4D4 len 00011B2C (70 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: gd[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (368) adc_control.c: Average ADC Voltage: 17.051 V[0m
+[0;32mI (368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+
+***ERROR*** A stack overflow in task mems_task has been detected.
+
+
+Backtrace: 0x400819f9:0x3ffb8480 0x40086c51:0x3ffb84a0 0x4008794a:0x3ffb84c0 0x400889bf:0x3ffb8540 0x40087a54:0x3ffb8560 0x40087a06:0x52a752a4 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 078073552
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf80h ( 49024) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bfa8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bfcc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e418 vaddr=40080000 size=01c00h (  7168) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=18654h ( 99924) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003867c vaddr=40081c00 size=0c8d4h ( 51412) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:11:05[0m
+[0;32mI (219) app_init: ELF file SHA256:  078073552...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008E4D4 len 00011B2C (70 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: gd[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (368) adc_control.c: Average ADC Voltage: 17.050 V[0m
+[0;32mI (368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+
+***ERROR*** A stack overflow in task mems_task has been detected.
+
+
+Backtrace: 0x400819f9:0x3ffb8480 0x40086c51:0x3ffb84a0 0x4008794a:0x3ffb84c0 0x400889bf:0x3ffb8540 0x40087a54:0x3ffb8560 0x40087a06:0x52a452a6 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 078073552
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf80h ( 49024) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bfa8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bfcc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e418 vaddr=40080000 size=01c00h (  7168) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=18654h ( 99924) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003867c vaddr=40081c00 size=0c8d4h ( 51412) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:11:05[0m
+[0;32mI (219) app_init: ELF file SHA256:  078073552...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008E4D4 len 00011B2C (70 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: gd[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (368) adc_control.c: Average ADC Voltage: 17.050 V[0m
+[0;32mI (368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+
+***ERROR*** A stack overflow in task mems_task has been detected.
+
+
+Backtrace: 0x400819f9:0x3ffb8480 0x40086c51:0x3ffb84a0 0x4008794a:0x3ffb84c0 0x400889bf:0x3ffb8540 0x40087a54:0x3ffb8560 0x40087a06:0x52a752a8 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 078073552
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf80h ( 49024) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bfa8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bfcc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e418 vaddr=40080000 size=01c00h (  7168) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=18654h ( 99924) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003867c vaddr=40081c00 size=0c8d4h ( 51412) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:11:05[0m
+[0;32mI (219) app_init: ELF file SHA256:  078073552...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008E4D4 len 00011B2C (70 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: gd[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (368) adc_control.c: Average ADC Voltage: 17.051 V[0m
+[0;32mI (368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+
+***ERROR*** A stack overflow in task mems_task has been detected.
+
+
+Backtrace: 0x400819f9:0x3ffb8480 0x40086c51:0x3ffb84a0 0x4008794a:0x3ffb84c0 0x400889bf:0x3ffb8540 0x40087a54:0x3ffb8560 0x40087a06:0x52a752a9 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 078073552
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf80h ( 49024) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bfa8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bfcc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e418 vaddr=40080000 size=01c00h (  7168) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=18654h ( 99924) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003867c vaddr=40081c00 size=0c8d4h ( 51412) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:11:05[0m
+[0;32mI (219) app_init: ELF file SHA256:  078073552...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008E4D4 len 00011B2C (70 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: gd[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (368) adc_control.c: Average ADC Voltage: 17.050 V[0m
+[0;32mI (368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+
+***ERROR*** A stack overflow in task mems_task has been detected.
+
+
+Backtrace: 0x400819f9:0x3ffb8480 0x40086c51:0x3ffb84a0 0x4008794a:0x3ffb84c0 0x400889bf:0x3ffb8540 0x40087a54:0x3ffb8560 0x40087a06:0x52a652a4 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 078073552
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf80h ( 49024) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bfa8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bfcc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e418 vaddr=40080000 size=01c00h (  7168) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=18654h ( 99924) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003867c vaddr=40081c00 size=0c8d4h ( 51412) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:11:05[0m
+[0;32mI (219) app_init: ELF file SHA256:  078073552...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008E4D4 len 00011B2C (70 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: gd[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (368) adc_control.c: Average ADC Voltage: 17.050 V[0m
+[0;32mI (368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+
+***ERROR*** A stack overflow in task mems_task has been detected.
+
+
+Backtrace: 0x400819f9:0x3ffb8480 0x40086c51:0x3ffb84a0 0x4008794a:0x3ffb84c0 0x400889bf:0x3ffb8540 0x40087a54:0x3f
+fb8560 0x40087a06:0x52a752a4 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 078073552
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf80h ( 49024) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bfa8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bfcc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e418 vaddr=40080000 size=01c00h (  7168) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=18654h ( 99924) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003867c vaddr=40081c00 size=0c8d4h ( 51412) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+I (187) boot: Disabling RNG early entropy source...
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:11:05[0m
+[0;32mI (219) app_init: ELF file SHA256:  078073552...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008E4D4 len 00011B2C (70 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: gd[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (368) adc_control.c: Average ADC Voltage: 17.050 V[0m
+[0;32mI (368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+
+***ERROR*** A stack overflow in task mems_task has been detected.
+
+
+Backtrace: 0x400819f9:0x3ffb8480 0x40086c51:0x3ffb84a0 0x4008794a:0x3ffb84c0 0x400889bf:0x3ffb8540 0x40087a54:0x3ffb8560 0x40087a06:0x52a652a5 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 078073552
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf80h ( 49024) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bfa8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bfcc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e418 vaddr=40080000 size=01c00h (  7168) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=18654h ( 99924) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003867c vaddr=40081c00 size=0c8d4h ( 51412) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:11:05[0m
+[0;32mI (219) app_init: ELF file SHA256:  078073552...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008E4D4 len 00011B2C (70 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: gd[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (368) adc_control.c: Average ADC Voltage: 17.050 V[0m
+[0;32mI (368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+
+***ERROR*** A stack overflow in task mems_task has been detected.
+
+
+Backtrace: 0x400819f9:0x3ffb8480 0x40086c51:0x3ffb84a0 0x4008794a:0x3ffb84c0 0x400889bf:0x3ffb8540 0x40087a54:0x3ffb8560 0x40087a06:0x52a352a5 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 078073552
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf80h ( 49024) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bfa8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bfcc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e418 vaddr=40080000 size=01c00h (  7168) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=18654h ( 99924) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003867c vaddr=40081c00 size=0c8d4h ( 51412) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+I (187) boot: Disabling RNG early entropy source...
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:11:05[0m
+[0;32mI (219) app_init: ELF file SHA256:  078073552...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008E4D4 len 00011B2C (70 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: gd[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (368) adc_control.c: Average ADC Voltage: 17.050 V[0m
+[0;32mI (368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+
+***ERROR*** A stack overflow in task mems_task has been detected.
+
+
+Backtrace: 0x400819f9:0x3ffb8480 0x40086c51:0x3ffb84a0 0x4008794a:0x3ffb84c0 0x400889bf:0x3ffb8540 0x40087a54:0x3ffb8560 0x40087a06:0x52a752aa |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 078073552
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf80h ( 49024) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bfa8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bfcc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e418 vaddr=40080000 size=01c00h (  7168) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=18654h ( 99924) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003867c vaddr=40081c00 size=0c8d4h ( 51412) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:11:05[0m
+[0;32mI (219) app_init: ELF file SHA256:  078073552...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m

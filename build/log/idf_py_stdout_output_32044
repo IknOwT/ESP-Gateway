@@ -1,0 +1,403 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  2 2025 19:22:20[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bfb0h ( 49072) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=0001bfd8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bffc vaddr=3ffb0000 size=02444h (  9284) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e448 vaddr=40080000 size=01bd0h (  7120) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1867ch ( 99964) map[0m
+[0;32mI (160) esp_image: segment 5: paddr=000386a4 vaddr=40081bd0 size=0c904h ( 51460) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu start user code[0m
+[0;32mI (206) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (210) app_init: App version:      19d6127-dirty[0m
+[0;32mI (214) app_init: Compile time:     Apr  2 2025 20:20:24[0m
+[0;32mI (219) app_init: ELF file SHA256:  635ea42e9...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (246) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (267) heap_init: At 4008E4D4 len 00011B2C (70 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: gd[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (288) main_task: Started on CPU0[0m
+[0;32mI (298) main_task: Calling app_main()[0m
+[0;32mI (298) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (368) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (1428) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (1428) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (2488) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (2488) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (3548) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (3548) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (4608) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (4608) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (5668) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (5668) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (6728) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (6728) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (7788) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (7788) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (8848) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (8848) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (9908) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (9908) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (10968) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (10968) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (12028) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (12028) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (13088) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (13088) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (14148) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (14148) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (15208) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (15208) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (16268) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (16268) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (17328) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (17328) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (18388) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (18388) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (19448) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (19448) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (20508) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (20508) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (21568) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (21568) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (22628) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (22628) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (23688) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (23688) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (24748) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (24748) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (25808) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (25808) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (26868) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (26868) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (27928) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (27928) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (28988) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (28988) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (30048) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (30048) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (31108) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (31108) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (32168) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (32168) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (33228) adc_control.c: Average ADC Voltage: 20.150 V[0m
+[0;32mI (33228) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (34288) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (34288) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (35348) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (35348) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (36408) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (36408) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (37468) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (37468) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (38528) adc_control.c: Average ADC Voltage: 20.150 V[0m
+[0;32mI (38528) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (39588) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (39588) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (40648) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (40648) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (41708) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (41708) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (42768) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (42768) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (43828) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (43828) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (44888) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (44888) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (45948) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (45948) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (47008) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (47008) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (48068) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (48068) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (49128) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (49128) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (50188) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (50188) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (51248) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (51248) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (52308) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (52308) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (53368) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (53368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (54428) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (54428) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (55488) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (55488) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (56548) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (56548) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (57608) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (57608) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (58668) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (58668) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (59728) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (59728) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (60788) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (60788) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (61848) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (61848) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (62908) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (62908) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (63968) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (63968) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (65028) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (65028) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (66088) adc_control.c: Average ADC Voltage: 20.150 V[0m
+[0;32mI (66088) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (67148) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (67148) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (68208) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (68208) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (69268) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (69268) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (70328) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (70328) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (71388) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (71388) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (72448) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (72448) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (73508) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (73508) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (74568) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (74568) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (75628) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (75628) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (76688) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (76688) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (77748) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (77748) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (78808) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (78808) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (79868) adc_control.c: Average ADC Voltage: 20.150 V[0m
+[0;32mI (79868) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (80928) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (80928) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (81988) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (81988) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (83048) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (83048) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (84108) adc_control.c: Average ADC Voltage: 20.150 V[0m
+[0;32mI (84108) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (85168) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (85168) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (86228) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (86228) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (87288) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (87288) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (88348) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (88348) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (89408) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (89408) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (90468) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (90468) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (91528) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (91528) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (92588) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (92588) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (93648) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (93648) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (94708) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (94708) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (95768) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (95768) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (96828) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (96828) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (97888) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (97888) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (98948) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (98948) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (100008) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (100008) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (101068) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (101068) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (102128) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (102128) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (103188) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (103188) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (104248) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (104248) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (105308) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (105308) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (106368) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (106368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (107428) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (107428) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (108488) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (108488) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (109548) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (109548) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (110608) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (110608) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (111668) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (111668) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (112728) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (112728) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (113788) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (113788) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (114848) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (114848) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (115908) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (115908) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (116968) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (116968) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (118028) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (118028) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (119088) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (119088) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (120148) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (120148) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (121208) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (121208) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (122268) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (122268) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (123328) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (123328) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (124388) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (124388) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (125448) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (125448) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (126508) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (126508) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (127568) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (127568) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (128628) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (128628) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (129688) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (129688) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (130748) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (130748) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (131808) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (131808) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (132868) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (132868) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (133928) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (133928) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (134988) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (134988) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (136048) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (136048) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (137108) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (137108) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (138168) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (138168) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (139228) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (139228) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (140288) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (140288) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (141348) adc_control.c: Average ADC Voltage: 20.150 V[0m
+[0;32mI (141348) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (142408) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (142408) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (143468) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (143468) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (144528) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (144528) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (145588) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (145588) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (146648) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (146648) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (147708) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (147708) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (148768) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (148768) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (149828) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (149828) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (150888) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (150888) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (151948) adc_control.c: Average ADC Voltage: 20.150 V[0m
+[0;32mI (151948) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (153008) adc_control.c: Average ADC Voltage: 20.150 V[0m
+[0;32mI (153008) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (154068) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (154068) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (155128) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (155128) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (156188) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (156188) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (157248) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (157248) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (158308) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (158308) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (159368) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (159368) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (160428) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (160428) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (161488) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (161488) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (162548) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (162548) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (163608) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (163608) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (164668) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (164668) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (165728) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (165728) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (166788) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (166788) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (167848) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (167848) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (168908) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (168908) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (169968) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (169968) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (171028) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (171028) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (172088) adc_control.c: Average ADC Voltage: 20.153 V[0m
+[0;32mI (172088) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (173148) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (173148) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (174208) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (174208) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (175268) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (175268) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (176328) adc_control.c: Average ADC Voltage: 20.151 V[0m
+[0;32mI (176328) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (177388) adc_control.c: Average ADC Voltage: 20.152 V[0m
+[0;32mI (177388) adc_control.c: Successfully read and processed one frame of ADC data.[0m

@@ -3,15 +3,18 @@
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
-#include "driver/adc.h"
-#include "esp_system.h"
+#include "esp_log.h"
+#include <inttypes.h>
+#include "esp_adc/adc_continuous.h"
 
-#define ADC_WIDTH     ADC_WIDTH_BIT_12  // ADC resolution: 12-bit (4095)
-#define ADC_CHANNEL   ADC1_CHANNEL_4   // ADC1 Channel 0 (GPIO33)
-#define ADC_ATTEN     ADC_ATTEN_DB_12    // Input voltage range: 0-3.3V
+#define ADC_BUF_SIZE         2048      // fits 1 frame of adc data
+#define CONV_FRAME_SIZE      2048      // equivalent to 1024 samples per frame as there are 2bytes per sample in 12bit adc.
+#define ADC_SAMPLING         20000     // 20000 samples per second
+#define ADC_MAX_VALUE        4095.0    // 12-bit ADC
+#define ADC_REF_VOLTAGE      3.9       // Reference voltage in volts
 
-void adc_init(void);
-void mems_task(void *arg);
+void cont_adc_init(void);
+void mems_task(void *pvParameters);
 
 #endif
 

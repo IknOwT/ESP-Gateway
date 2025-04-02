@@ -1,18 +1,5 @@
 #include "i2c_control.h"
-#include "driver/i2c.h"
 #include "esp_log.h"
-
-#define I2C_MASTER_SCL_IO    22      // Set SCL GPIO
-#define I2C_MASTER_SDA_IO    21      // Set SDA GPIO
-#define I2C_MASTER_FREQ_HZ   100000  // 400kHz I2C frequency
-#define I2C_MASTER_NUM       I2C_NUM_0  // I2C port number
-#define I2C_MASTER_TIMEOUT   1000 / portTICK_PERIOD_MS  
-
-#define I2C_SCD4x_ADDR       0x62 //SCD41 Address
-#define SCD4x_CMD_POWER_DOWN 0x36e0  // Power Down Command
-#define SCD4x_CMD_WAKE_UP    0x36f6  // Wake up Command
-#define SCD4x_CMD_MEAS       0x219d  // Single shot measurement command
-#define SCD4x_CMD_READ       0xeC05  //Read data from sensor
 
 static const char *TAG = "i2c_control.c";
 
@@ -32,7 +19,7 @@ void i2c_init(void) {
     ESP_LOGI(TAG, "I2C initialized successfully");
 }
 
-esp_err_t scd41_power_down() {
+esp_err_t scd41_power_down(void) {
     uint8_t cmd[2] = { (SCD4x_CMD_POWER_DOWN >> 8) & 0xFF, SCD4x_CMD_POWER_DOWN & 0xFF };
 
     // Write the 2-byte command to the device
@@ -47,7 +34,7 @@ esp_err_t scd41_power_down() {
     return ret;
 }
 
-esp_err_t scd41_wake_up() {
+esp_err_t scd41_wake_up(void) {
     uint8_t cmd[2] = { (SCD4x_CMD_WAKE_UP >> 8) & 0xFF, SCD4x_CMD_WAKE_UP & 0xFF };
 
     // Write the 2-byte command to the device
@@ -62,7 +49,7 @@ esp_err_t scd41_wake_up() {
     return ret;
 }
 
-esp_err_t scd41_measure() {
+esp_err_t scd41_measure(void) {
     uint8_t cmd[2] = { (SCD4x_CMD_MEAS >> 8) & 0xFF, SCD4x_CMD_MEAS & 0xFF };
 
     esp_err_t ret = i2c_master_write_to_device(I2C_MASTER_NUM, I2C_SCD4x_ADDR, cmd, sizeof(cmd), pdMS_TO_TICKS(1000));
@@ -76,7 +63,7 @@ esp_err_t scd41_measure() {
     return ret;
 }
 
-esp_err_t scd41_read() {
+esp_err_t scd41_read(void) {
     uint8_t cmd[2] = { (SCD4x_CMD_READ >> 8) & 0xFF, SCD4x_CMD_READ & 0xFF };
 
     esp_err_t ret = i2c_master_write_to_device(I2C_MASTER_NUM, I2C_SCD4x_ADDR, cmd, sizeof(cmd), pdMS_TO_TICKS(1000));

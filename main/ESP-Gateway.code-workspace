@@ -26,13 +26,5 @@
     		}
 		},
 		"terminal.integrated.defaultProfile.windows": "Command Prompt",
-		"files.associations": {
-			"pwm_control.h": "c",
-			"freertos.h": "c",
-			"task.h": "c",
-			"stdio.h": "c",
-			"ledc.h": "c",
-			"esp_log.h": "c"
-		},
 	}
 }
