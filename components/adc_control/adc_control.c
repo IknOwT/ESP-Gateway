@@ -84,13 +84,19 @@ void adc_cont_read(void) {
     uint32_t adc_avg = adc_sum / (ADC_BUF_SIZE / 2);
 
     // Print raw ADC values for debugging
-    ESP_LOGI(TAG, "ADC Avg Raw Value (12-bit): %" PRIu32, adc_avg);
+    //ESP_LOGI(TAG, "ADC Avg Raw Value (12-bit): %" PRIu32, adc_avg);
 
-    // Convert ADC value to actual voltage
+    // Convert ADC value to actual voltage using 3.9V reference
     float voltage = ((float)adc_avg / (float)ADC_MAX_VALUE) * ADC_REF_VOLTAGE;
 
-    // Print the averaged voltage level
-    ESP_LOGI(TAG, "Average ADC Voltage: %.3f V", voltage);
+     // Convert the voltage to sound pressure using the mic sensitivity
+     //float sound_pressure = voltage / 42.0;
+    
+     // Convert sound pressure to SPL (in dB)
+     float spl = 20 * log10(voltage / 20e-6);  // 20e-6 Pa is the reference sound pressure level for SPL calculation
+
+    // Print the calculated SPL level
+    ESP_LOGI(TAG, "Calculated SPL: %.2f dB", spl);
 
     // Stop ADC continuous mode after reading the frame
     ret = adc_continuous_stop(adc_cont_handle);

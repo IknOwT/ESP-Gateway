@@ -7,8 +7,9 @@
 
 void app_main(void)
 {
-    i2c_init();          //  Initialize I2C
     pwm_init();          //  Initialize the PWM
+    buzzer_boot_tone();
+    i2c_init();          //  Initialize I2C
     cont_adc_init();     //Initialize the continuous ADC
 
     xTaskCreate(scd41_task, "scd41_task", 2048, NULL, 5, NULL);

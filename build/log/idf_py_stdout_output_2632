@@ -1,0 +1,424 @@
+ets J�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 14 2025 20:44:26[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c480h ( 50304) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=0001c4a8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001c4cc vaddr=3ffb0000 size=023fch (  9212) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=0001e8d0 vaddr=40080000 size=01748h (  5960) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=196d4h (104148) map[0m
+[0;32mI (162) esp_image: segment 5: paddr=000396fc vaddr=40081748 size=0cee8h ( 52968) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (200) cpu_start: Multicore app[0m
+[0;32mI (208) cpu_start: Pro cpu start user code[0m
+[0;32mI (208) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (208) app_init: Application information:[0m
+[0;32mI (208) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (213) app_init: App version:      0ee3740-dirty[0m
+[0;32mI (217) app_init: Compile time:     Apr 14 2025 20:42:57[0m
+[0;32mI (222) app_init: ELF file SHA256:  9675985f3...[0m
+[0;32mI (226) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (230) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (234) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (238) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (242) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (248) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (253) heap_init: At 3FFB2D30 len 0002D2D0 (180 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (264) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (269) heap_init: At 4008E630 len 000119D0 (70 KiB): IRAM[0m
+[0;32mI (276) spi_flash: detected chip: gd[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (291) main_task: Started on CPU0[0m
+[0;32mI (301) main_task: Calling app_main()[0m
+[0;32mI (301) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (301) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (301) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (311) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (311) main_task: Returned from app_main()[0m
+[1;31mE (351) i2c_control.c: Failed to send measurement command to SCD41: ESP_FAIL[0m
+[0;32mI (371) adc_control.c: ADC Avg Raw Value (12-bit): 675[0m
+[0;32mI (371) adc_control.c: Average ADC Voltage: 0.643 V[0m
+[0;32mI (371) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (1441) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (1441) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (1441) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (2501) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (2501) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (2501) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (3561) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (3561) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (3561) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (4621) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (4621) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (4621) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (5351) i2c_control.c: Reading sensor data...[0m
+[0;32mI (5351) i2c_control.c: CO2: 1333 ppm[0m
+[0;32mI (5351) i2c_control.c: Temperature: 29.65°C[0m
+[0;32mI (5351) i2c_control.c: Humidity: 48.81%[0m
+[0;32mI (5351) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (5681) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (5681) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (5681) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (6741) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (6741) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (6741) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (7801) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (7801) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (7801) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (8861) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (8861) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (8861) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (9921) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (9921) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (9921) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (10981) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (10981) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (10981) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (12041) adc_control.c: ADC Avg Raw Value (12-bit): 675[0m
+[0;32mI (12041) adc_control.c: Average ADC Voltage: 0.643 V[0m
+[0;32mI (12041) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (13101) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (13101) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (13101) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (14161) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (14161) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (14161) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (15221) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (15221) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (15221) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (15331) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (15361) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (16281) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (16281) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (16281) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (17341) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (17341) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (17341) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (18401) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (18401) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (18401) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (19461) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (19461) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (19461) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (20361) i2c_control.c: Reading sensor data...[0m
+[0;32mI (20361) i2c_control.c: CO2: 1288 ppm[0m
+[0;32mI (20361) i2c_control.c: Temperature: 29.67°C[0m
+[0;32mI (20361) i2c_control.c: Humidity: 48.71%[0m
+[0;32mI (20361) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (20521) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (20521) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (20521) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (21581) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (21581) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (21581) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (22641) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (22641) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (22641) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (23701) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (23701) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (23701) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (24761) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (24761) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (24761) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (25821) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (25821) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (25821) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (26881) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (26881) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (26881) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (27941) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (27941) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (27941) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (29001) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (29001) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (29001) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (30061) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (30061) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (30061) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (30341) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (30371) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (31121) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (31121) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (31121) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (32181) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (32181) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (32181) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (33241) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (33241) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (33241) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (34301) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (34301) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (34301) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (35361) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (35361) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (35361) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (35371) i2c_control.c: Reading sensor data...[0m
+[0;32mI (35371) i2c_control.c: CO2: 1281 ppm[0m
+[0;32mI (35371) i2c_control.c: Temperature: 29.83°C[0m
+[0;32mI (35381) i2c_control.c: Humidity: 48.35%[0m
+[0;32mI (35381) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (36421) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (36421) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (36421) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (37481) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (37481) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (37481) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (38541) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (38541) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (38541) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (39601) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (39601) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (39601) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (40661) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (40661) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (40661) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (41721) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (41721) adc_control.c: Average ADC Voltage: 0.640 V[0m
+[0;32mI (41721) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (42781) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (42781) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (42781) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (43841) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (43841) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (43841) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (44901) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (44901) adc_control.c: Average ADC Voltage: 0.640 V[0m
+[0;32mI (44901) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (45361) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (45391) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (45961) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (45961) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (45961) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (47021) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (47021) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (47021) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (48081) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (48081) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (48081) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (49141) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (49141) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (49141) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (50201) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (50201) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (50201) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (50391) i2c_control.c: Reading sensor data...[0m
+[0;32mI (50391) i2c_control.c: CO2: 1320 ppm[0m
+[0;32mI (50391) i2c_control.c: Temperature: 29.95°C[0m
+[0;32mI (50391) i2c_control.c: Humidity: 48.12%[0m
+[0;32mI (50391) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (51261) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (51261) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (51261) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (52321) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (52321) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (52321) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (53381) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (53381) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (53381) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (54441) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (54441) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (54441) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (55501) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (55501) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (55501) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (56561) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (56561) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (56561) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (57621) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (57621) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (57621) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (58681) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (58681) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (58681) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (59741) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (59741) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (59741) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (60371) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (60401) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (60801) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (60801) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (60801) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (61861) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (61861) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (61861) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (62921) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (62921) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (62921) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (63981) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (63981) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (63981) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (65041) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (65041) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (65041) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (65401) i2c_control.c: Reading sensor data...[0m
+[0;32mI (65401) i2c_control.c: CO2: 1286 ppm[0m
+[0;32mI (65401) i2c_control.c: Temperature: 30.06°C[0m
+[0;32mI (65401) i2c_control.c: Humidity: 47.97%[0m
+[0;32mI (65401) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (66101) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (66101) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (66101) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (67161) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (67161) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (67161) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (68221) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (68221) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (68221) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (69281) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (69281) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (69281) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (70341) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (70341) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (70341) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (71401) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (71401) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (71401) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (72461) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (72461) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (72461) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (73521) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (73521) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (73521) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (74581) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (74581) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (74581) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (75381) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (75411) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (75641) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (75641) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (75641) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (76701) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (76701) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (76701) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (77761) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (77761) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (77761) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (78821) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (78821) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (78821) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (79881) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (79881) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (79881) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (80411) i2c_control.c: Reading sensor data...[0m
+[0;32mI (80411) i2c_control.c: CO2: 1297 ppm[0m
+[0;32mI (80411) i2c_control.c: Temperature: 30.09°C[0m
+[0;32mI (80411) i2c_control.c: Humidity: 47.85%[0m
+[0;32mI (80411) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (80941) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (80941) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (80941) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (82001) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (82001) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (82001) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (83061) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (83061) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (83061) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (84121) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (84121) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (84121) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (85181) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (85181) adc_control.c: Average ADC Voltage: 0.640 V[0m
+[0;32mI (85181) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (86241) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (86241) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (86241) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (87301) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (87301) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (87301) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (88361) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (88361) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (88361) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (89421) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (89421) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (89421) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (90391) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (90421) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (90481) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (90481) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (90481) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (91541) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (91541) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (91541) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (92601) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (92601) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (92601) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (93661) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (93661) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (93661) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (94721) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (94721) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (94721) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (95421) i2c_control.c: Reading sensor data...[0m
+[0;32mI (95421) i2c_control.c: CO2: 1293 ppm[0m
+[0;32mI (95421) i2c_control.c: Temperature: 30.20°C[0m
+[0;32mI (95421) i2c_control.c: Humidity: 47.80%[0m
+[0;32mI (95421) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (95781) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (95781) adc_control.c: Average ADC Voltage: 0.640 V[0m
+[0;32mI (95781) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (96841) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (96841) adc_control.c: Average ADC Voltage: 0.640 V[0m
+[0;32mI (96841) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (97901) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (97901) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (97901) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (98961) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (98961) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (98961) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (100021) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (100021) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (100021) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (101081) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (101081) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (101081) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (102141) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (102141) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (102141) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (103201) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (103201) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (103201) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (104261) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (104261) adc_control.c: Average ADC Voltage: 0.642 V[0m
+[0;32mI (104261) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (105321) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (105321) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (105321) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (105401) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (105431) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (106381) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (106381) adc_control.c: Average ADC Voltage: 0.640 V[0m
+[0;32mI (106381) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (107441) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (107441) adc_control.c: Average ADC Voltage: 0.640 V[0m
+[0;32mI (107441) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (108501) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (108501) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (108501) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (109561) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (109561) adc_control.c: Average ADC Voltage: 0.641 V[0m
+[0;32mI (109561) adc_control.c: Successfully read and processed one frame of ADC data.[0m

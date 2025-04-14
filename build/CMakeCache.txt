@@ -557,7 +557,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=120
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=121
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -603,7 +603,7 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
 C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS:INTERNAL=1
 //Details about finding Git
-FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[C:/Program Files/Git/cmd/git.exe][v2.49.0.windows.1()]
+FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[C:/Program Files/Git/cmd/git.exe][v2.47.1.windows.1()]
 //Details about finding Python3
 FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[C:/esp/tools/.espressif/python_env/idf5.4_py3.11_env/Scripts/python.exe][cfound components: Interpreter ][v3.11.2()]
 //Details about finding Threads
@@ -618,7 +618,7 @@ _Python3_Compiler_REASON_FAILURE:INTERNAL=
 _Python3_Development_REASON_FAILURE:INTERNAL=
 _Python3_EXECUTABLE:INTERNAL=C:/esp/tools/.espressif/python_env/idf5.4_py3.11_env/Scripts/python.exe
 //Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;11;2;32;64;;;abi3;C:\esp\tools\.espressif\tools\idf-python\3.11.2\Lib;C:\esp\tools\.espressif\python_env\idf5.4_py3.11_env\Lib;C:\esp\tools\.espressif\python_env\idf5.4_py3.11_env\Lib\site-packages;C:\esp\tools\.espressif\python_env\idf5.4_py3.11_env\Lib\site-packages
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;11;2;32;64;;;abi3;C:\Users\Sheena\AppData\Local\Programs\Python\Python311\Lib;C:\esp\tools\.espressif\python_env\idf5.4_py3.11_env\Lib;C:\esp\tools\.espressif\python_env\idf5.4_py3.11_env\Lib\site-packages;C:\esp\tools\.espressif\python_env\idf5.4_py3.11_env\Lib\site-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=9cfd5f32f75db37b031700e12fe59d8a
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=

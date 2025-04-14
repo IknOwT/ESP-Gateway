@@ -1,0 +1,10 @@
+CMake Error at C:/esp/esp-idf/tools/cmake/component.cmake:317 (message):
+  Include directory
+  'C:/esp/esp-idf/myapps/ESP-Gateway/components/pwm_control/PRIV' is not a
+  directory.
+Call Stack (most recent call first):
+  C:/esp/esp-idf/tools/cmake/component.cmake:492 (__component_add_include_dirs)
+  components/pwm_control/CMakeLists.txt:3 (idf_component_register)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

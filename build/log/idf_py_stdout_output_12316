@@ -1,0 +1,1358 @@
+ets�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 14 2025 20:44:26[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c4b0h ( 50352) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=0001c4d8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001c4fc vaddr=3ffb0000 size=023fch (  9212) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=0001e900 vaddr=40080000 size=01718h (  5912) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1a06ch (106604) map[0m
+[0;32mI (163) esp_image: segment 5: paddr=0003a094 vaddr=40081718 size=0cf18h ( 53016) load[0m
+[0;32mI (190) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (190) boot: Disabling RNG early entropy source...[0m
+[0;32mI (201) cpu_start: Multicore app[0m
+[0;32mI (209) cpu_start: Pro cpu start user code[0m
+[0;32mI (209) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (209) app_init: Application information:[0m
+[0;32mI (209) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (214) app_init: App version:      0ee3740-dirty[0m
+[0;32mI (218) app_init: Compile time:     Apr 14 2025 22:09:14[0m
+[0;32mI (223) app_init: ELF file SHA256:  9b49c016c...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (231) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (235) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (239) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (243) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (249) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFB2D30 len 0002D2D0 (180 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (270) heap_init: At 4008E630 len 000119D0 (70 KiB): IRAM[0m
+[0;32mI (277) spi_flash: detected chip: gd[0m
+[0;32mI (279) spi_flash: flash io: dio[0m
+[0;33mW (282) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (292) main_task: Started on CPU0[0m
+[0;32mI (302) main_task: Calling app_main()[0m
+[0;32mI (1252) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (1252) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1252) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (1252) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (1262) main_task: Returned from app_main()[0m
+[0;32mI (1292) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (1322) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (1322) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (1322) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (2382) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (2382) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (2382) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (3442) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (3442) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (3442) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (4502) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (4502) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (4502) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (5562) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (5562) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (5562) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (6292) i2c_control.c: Reading sensor data...[0m
+[0;32mI (6292) i2c_control.c: CO2: 1257 ppm[0m
+[0;32mI (6292) i2c_control.c: Temperature: 30.31°C[0m
+[0;32mI (6292) i2c_control.c: Humidity: 46.68%[0m
+[0;32mI (6292) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (6622) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (6622) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (6622) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (7682) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (7682) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (7682) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (8742) adc_control.c: ADC Avg Raw Value (12-bit): 652[0m
+[0;32mI (8742) adc_control.c: Calculated SPL: 60.82 dB[0m
+[0;32mI (8742) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (9802) adc_control.c: ADC Avg Raw Value (12-bit): 702[0m
+[0;32mI (9802) adc_control.c: Calculated SPL: 61.46 dB[0m
+[0;32mI (9802) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (10862) adc_control.c: ADC Avg Raw Value (12-bit): 686[0m
+[0;32mI (10862) adc_control.c: Calculated SPL: 61.26 dB[0m
+[0;32mI (10862) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (11922) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (11922) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (11922) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (12982) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (12982) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (12982) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (14042) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (14042) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (14042) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (15102) adc_control.c: ADC Avg Raw Value (12-bit): 656[0m
+[0;32mI (15102) adc_control.c: Calculated SPL: 60.87 dB[0m
+[0;32mI (15102) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (16162) adc_control.c: ADC Avg Raw Value (12-bit): 658[0m
+[0;32mI (16162) adc_control.c: Calculated SPL: 60.90 dB[0m
+[0;32mI (16162) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (16272) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (16302) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (17222) adc_control.c: ADC Avg Raw Value (12-bit): 707[0m
+[0;32mI (17222) adc_control.c: Calculated SPL: 61.52 dB[0m
+[0;32mI (17222) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (18282) adc_control.c: ADC Avg Raw Value (12-bit): 688[0m
+[0;32mI (18282) adc_control.c: Calculated SPL: 61.29 dB[0m
+[0;32mI (18282) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (19342) adc_control.c: ADC Avg Raw Value (12-bit): 703[0m
+[0;32mI (19342) adc_control.c: Calculated SPL: 61.47 dB[0m
+[0;32mI (19342) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (20402) adc_control.c: ADC Avg Raw Value (12-bit): 671[0m
+[0;32mI (20402) adc_control.c: Calculated SPL: 61.07 dB[0m
+[0;32mI (20402) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (21302) i2c_control.c: Reading sensor data...[0m
+[0;32mI (21302) i2c_control.c: CO2: 2811 ppm[0m
+[0;32mI (21302) i2c_control.c: Temperature: 30.22°C[0m
+[0;32mI (21302) i2c_control.c: Humidity: 49.53%[0m
+[0;32mI (21302) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (21462) adc_control.c: ADC Avg Raw Value (12-bit): 670[0m
+[0;32mI (21462) adc_control.c: Calculated SPL: 61.06 dB[0m
+[0;32mI (21462) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (22522) adc_control.c: ADC Avg Raw Value (12-bit): 670[0m
+[0;32mI (22522) adc_control.c: Calculated SPL: 61.06 dB[0m
+[0;32mI (22522) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (23582) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (23582) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (23582) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (24642) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (24642) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (24642) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (25702) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (25702) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (25702) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (26762) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (26762) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (26762) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (27822) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (27822) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (27822) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (28882) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (28882) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (28882) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (29942) adc_control.c: ADC Avg Raw Value (12-bit): 675[0m
+[0;32mI (29942) adc_control.c: Calculated SPL: 61.12 dB[0m
+[0;32mI (29942) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (31002) adc_control.c: ADC Avg Raw Value (12-bit): 675[0m
+[0;32mI (31002) adc_control.c: Calculated SPL: 61.12 dB[0m
+[0;32mI (31002) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (31282) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (31312) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (32062) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (32062) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (32062) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (33122) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (33122) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (33122) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (34182) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (34182) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (34182) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (35242) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (35242) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (35242) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (36302) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (36302) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (36302) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (36312) i2c_control.c: Reading sensor data...[0m
+[0;32mI (36312) i2c_control.c: CO2: 2296 ppm[0m
+[0;32mI (36312) i2c_control.c: Temperature: 29.96°C[0m
+[0;32mI (36322) i2c_control.c: Humidity: 49.38%[0m
+[0;32mI (36322) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (37362) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (37362) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (37362) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (38422) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (38422) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (38422) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (39482) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (39482) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (39482) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (40542) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (40542) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (40542) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (41602) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (41602) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (41602) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (42662) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (42662) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (42662) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (43722) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (43722) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (43722) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (44782) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (44782) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (44782) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (45842) adc_control.c: ADC Avg Raw Value (12-bit): 675[0m
+[0;32mI (45842) adc_control.c: Calculated SPL: 61.12 dB[0m
+[0;32mI (45842) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (46292) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (46322) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (46902) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (46902) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (46902) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (47962) adc_control.c: ADC Avg Raw Value (12-bit): 675[0m
+[0;32mI (47962) adc_control.c: Calculated SPL: 61.12 dB[0m
+[0;32mI (47962) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (49022) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (49022) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (49022) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (50082) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (50082) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (50082) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (51142) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (51142) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (51142) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (51322) i2c_control.c: Reading sensor data...[0m
+[0;32mI (51322) i2c_control.c: CO2: 1933 ppm[0m
+[0;32mI (51322) i2c_control.c: Temperature: 29.75°C[0m
+[0;32mI (51322) i2c_control.c: Humidity: 48.85%[0m
+[0;32mI (51322) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (52202) adc_control.c: ADC Avg Raw Value (12-bit): 675[0m
+[0;32mI (52202) adc_control.c: Calculated SPL: 61.12 dB[0m
+[0;32mI (52202) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (53262) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (53262) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (53262) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (54322) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (54322) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (54322) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (55382) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (55382) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (55382) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (56442) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (56442) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (56442) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (57502) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (57502) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (57502) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (58562) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (58562) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (58562) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (59622) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (59622) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (59622) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (60682) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (60682) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (60682) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (61302) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (61332) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (61742) adc_control.c: ADC Avg Raw Value (12-bit): 675[0m
+[0;32mI (61742) adc_control.c: Calculated SPL: 61.12 dB[0m
+[0;32mI (61742) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (62802) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (62802) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (62802) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (63862) adc_control.c: ADC Avg Raw Value (12-bit): 675[0m
+[0;32mI (63862) adc_control.c: Calculated SPL: 61.12 dB[0m
+[0;32mI (63862) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (64922) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (64922) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (64922) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (65982) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (65982) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (65982) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (66332) i2c_control.c: Reading sensor data...[0m
+[0;32mI (66332) i2c_control.c: CO2: 1744 ppm[0m
+[0;32mI (66332) i2c_control.c: Temperature: 29.69°C[0m
+[0;32mI (66332) i2c_control.c: Humidity: 48.75%[0m
+[0;32mI (66332) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (67042) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (67042) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (67042) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (68102) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (68102) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (68102) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (69162) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (69162) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (69162) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (70222) adc_control.c: ADC Avg Raw Value (12-bit): 675[0m
+[0;32mI (70222) adc_control.c: Calculated SPL: 61.12 dB[0m
+[0;32mI (70222) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (71282) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (71282) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (71282) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (72342) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (72342) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (72342) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (73402) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (73402) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (73402) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (74462) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (74462) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (74462) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (75522) adc_control.c: ADC Avg Raw Value (12-bit): 675[0m
+[0;32mI (75522) adc_control.c: Calculated SPL: 61.12 dB[0m
+[0;32mI (75522) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (76312) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (76342) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (76582) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (76582) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (76582) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (77642) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (77642) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (77642) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (78702) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (78702) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (78702) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (79762) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (79762) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (79762) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (80822) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (80822) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (80822) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (81342) i2c_control.c: Reading sensor data...[0m
+[0;32mI (81342) i2c_control.c: CO2: 1625 ppm[0m
+[0;32mI (81342) i2c_control.c: Temperature: 29.73°C[0m
+[0;32mI (81342) i2c_control.c: Humidity: 48.71%[0m
+[0;32mI (81342) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (81882) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (81882) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (81882) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (82942) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (82942) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (82942) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (84002) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (84002) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (84002) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (85062) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (85062) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (85062) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (86122) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (86122) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (86122) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (87182) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (87182) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (87182) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (88242) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (88242) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (88242) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (89302) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (89302) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (89302) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (90362) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (90362) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (90362) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (91322) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (91352) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (91422) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (91422) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (91422) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (92482) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (92482) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (92482) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (93542) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (93542) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (93542) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (94602) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (94602) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (94602) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (95662) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (95662) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (95662) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (96352) i2c_control.c: Reading sensor data...[0m
+[0;32mI (96352) i2c_control.c: CO2: 1490 ppm[0m
+[0;32mI (96352) i2c_control.c: Temperature: 29.76°C[0m
+[0;32mI (96352) i2c_control.c: Humidity: 48.56%[0m
+[0;32mI (96352) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (96722) adc_control.c: ADC Avg Raw Value (12-bit): 675[0m
+[0;32mI (96722) adc_control.c: Calculated SPL: 61.12 dB[0m
+[0;32mI (96722) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (97782) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (97782) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (97782) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (98842) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (98842) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (98842) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (99902) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (99902) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (99902) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (100962) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (100962) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (100962) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (102022) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (102022) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (102022) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (103082) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (103082) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (103082) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (104142) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (104142) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (104142) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (105202) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (105202) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (105202) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (106262) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (106262) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (106262) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (106332) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (106362) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (107322) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (107322) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (107322) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (108382) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (108382) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (108382) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (109442) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (109442) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (109442) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (110502) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (110502) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (110502) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (111362) i2c_control.c: Reading sensor data...[0m
+[0;32mI (111362) i2c_control.c: CO2: 1423 ppm[0m
+[0;32mI (111362) i2c_control.c: Temperature: 29.81°C[0m
+[0;32mI (111362) i2c_control.c: Humidity: 48.66%[0m
+[0;32mI (111362) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (111562) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (111562) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (111562) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (112622) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (112622) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (112622) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (113682) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (113682) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (113682) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (114742) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (114742) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (114742) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (115802) adc_control.c: ADC Avg Raw Value (12-bit): 675[0m
+[0;32mI (115802) adc_control.c: Calculated SPL: 61.12 dB[0m
+[0;32mI (115802) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (116862) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (116862) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (116862) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (117922) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (117922) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (117922) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (118982) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (118982) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (118982) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (120042) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (120042) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (120042) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (121102) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (121102) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (121102) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (121342) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (121372) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (122162) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (122162) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (122162) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (123222) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (123222) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (123222) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (124282) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (124282) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (124282) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (125342) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (125342) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (125342) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (126372) i2c_control.c: Reading sensor data...[0m
+[0;32mI (126372) i2c_control.c: CO2: 1345 ppm[0m
+[0;32mI (126372) i2c_control.c: Temperature: 29.81°C[0m
+[0;32mI (126372) i2c_control.c: Humidity: 48.59%[0m
+[0;32mI (126372) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (126402) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (126402) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (126402) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (127462) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (127462) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (127462) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (128522) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (128522) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (128522) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (129582) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (129582) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (129582) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (130642) adc_control.c: ADC Avg Raw Value (12-bit): 675[0m
+[0;32mI (130642) adc_control.c: Calculated SPL: 61.12 dB[0m
+[0;32mI (130642) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (131702) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (131702) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (131702) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (132762) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (132762) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (132762) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (133822) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (133822) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (133822) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (134882) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (134882) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (134882) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (135942) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (135942) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (135942) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (136352) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (136382) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (137002) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (137002) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (137002) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (138062) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (138062) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (138062) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (139122) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (139122) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (139122) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (140182) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (140182) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (140182) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (141242) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (141242) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (141242) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (141382) i2c_control.c: Reading sensor data...[0m
+[0;32mI (141382) i2c_control.c: CO2: 1342 ppm[0m
+[0;32mI (141382) i2c_control.c: Temperature: 29.87°C[0m
+[0;32mI (141382) i2c_control.c: Humidity: 48.52%[0m
+[0;32mI (141382) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (142302) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (142302) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (142302) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (143362) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (143362) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (143362) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (144422) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (144422) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (144422) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (145482) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (145482) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (145482) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (146542) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (146542) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (146542) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (147602) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (147602) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (147602) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (148662) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (148662) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (148662) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (149722) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (149722) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (149722) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (150782) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (150782) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (150782) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (151362) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (151392) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (151842) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (151842) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (151842) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (152902) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (152902) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (152902) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (153962) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (153962) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (153962) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (155022) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (155022) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (155022) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (156082) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (156082) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (156082) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (156392) i2c_control.c: Reading sensor data...[0m
+[0;32mI (156392) i2c_control.c: CO2: 1312 ppm[0m
+[0;32mI (156392) i2c_control.c: Temperature: 29.92°C[0m
+[0;32mI (156392) i2c_control.c: Humidity: 48.43%[0m
+[0;32mI (156392) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (157142) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (157142) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (157142) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (158202) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (158202) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (158202) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (159262) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (159262) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (159262) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (160322) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (160322) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (160322) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (161382) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (161382) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (161382) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (162442) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (162442) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (162442) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (163502) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (163502) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (163502) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (164562) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (164562) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (164562) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (165622) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (165622) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (165622) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (166372) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (166402) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (166682) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (166682) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (166682) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (167742) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (167742) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (167742) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (168802) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (168802) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (168802) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (169862) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (169862) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (169862) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (170922) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (170922) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (170922) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (171402) i2c_control.c: Reading sensor data...[0m
+[0;32mI (171402) i2c_control.c: CO2: 1137 ppm[0m
+[0;32mI (171402) i2c_control.c: Temperature: 30.00°C[0m
+[0;32mI (171402) i2c_control.c: Humidity: 48.38%[0m
+[0;32mI (171402) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (171982) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (171982) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (171982) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (173042) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (173042) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (173042) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (174102) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (174102) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (174102) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (175162) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (175162) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (175162) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (176222) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (176222) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (176222) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (177282) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (177282) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (177282) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (178342) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (178342) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (178342) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (179402) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (179402) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (179402) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (180462) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (180462) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (180462) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (181382) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (181412) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (181522) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (181522) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (181522) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (182582) adc_control.c: ADC Avg Raw Value (12-bit): 675[0m
+[0;32mI (182582) adc_control.c: Calculated SPL: 61.12 dB[0m
+[0;32mI (182582) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (183642) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (183642) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (183642) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (184702) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (184702) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (184702) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (185762) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (185762) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (185762) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (186412) i2c_control.c: Reading sensor data...[0m
+[0;32mI (186412) i2c_control.c: CO2: 1369 ppm[0m
+[0;32mI (186412) i2c_control.c: Temperature: 29.89°C[0m
+[0;32mI (186412) i2c_control.c: Humidity: 48.43%[0m
+[0;32mI (186412) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (186822) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (186822) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (186822) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (187882) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (187882) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (187882) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (188942) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (188942) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (188942) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (190002) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (190002) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (190002) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (191062) adc_control.c: ADC Avg Raw Value (12-bit): 675[0m
+[0;32mI (191062) adc_control.c: Calculated SPL: 61.12 dB[0m
+[0;32mI (191062) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (192122) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (192122) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (192122) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (193182) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (193182) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (193182) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (194242) adc_control.c: ADC Avg Raw Value (12-bit): 675[0m
+[0;32mI (194242) adc_control.c: Calculated SPL: 61.12 dB[0m
+[0;32mI (194242) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (195302) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (195302) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (195302) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (196362) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (196362) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (196362) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (196392) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (196422) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (197422) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (197422) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (197422) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (198482) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (198482) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (198482) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (199542) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (199542) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (199542) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (200602) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (200602) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (200602) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (201422) i2c_control.c: Reading sensor data...[0m
+[0;32mI (201422) i2c_control.c: CO2: 1295 ppm[0m
+[0;32mI (201422) i2c_control.c: Temperature: 29.81°C[0m
+[0;32mI (201422) i2c_control.c: Humidity: 48.43%[0m
+[0;32mI (201422) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (201662) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (201662) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (201662) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (202722) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (202722) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (202722) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (203782) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (203782) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (203782) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (204842) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (204842) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (204842) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (205902) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (205902) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (205902) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (206962) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (206962) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (206962) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (208022) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (208022) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (208022) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (209082) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (209082) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (209082) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (210142) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (210142) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (210142) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (211202) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (211202) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (211202) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (211402) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (211432) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (212262) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (212262) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (212262) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (213322) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (213322) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (213322) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (214382) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (214382) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (214382) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (215442) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (215442) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (215442) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (216432) i2c_control.c: Reading sensor data...[0m
+[0;32mI (216432) i2c_control.c: CO2: 1292 ppm[0m
+[0;32mI (216432) i2c_control.c: Temperature: 29.89°C[0m
+[0;32mI (216432) i2c_control.c: Humidity: 48.31%[0m
+[0;32mI (216432) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (216502) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (216502) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (216502) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (217562) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (217562) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (217562) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (218622) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (218622) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (218622) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (219682) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (219682) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (219682) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (220742) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (220742) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (220742) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (221802) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (221802) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (221802) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (222862) adc_control.c: ADC Avg Raw Value (12-bit): 675[0m
+[0;32mI (222862) adc_control.c: Calculated SPL: 61.12 dB[0m
+[0;32mI (222862) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (223922) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (223922) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (223922) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (224982) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (224982) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (224982) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (226042) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (226042) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (226042) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (226412) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (226442) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (227102) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (227102) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (227102) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (228162) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (228162) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (228162) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (229222) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (229222) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (229222) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (230282) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (230282) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (230282) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (231342) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (231342) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (231342) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (231442) i2c_control.c: Reading sensor data...[0m
+[0;32mI (231442) i2c_control.c: CO2: 1291 ppm[0m
+[0;32mI (231442) i2c_control.c: Temperature: 29.92°C[0m
+[0;32mI (231442) i2c_control.c: Humidity: 48.28%[0m
+[0;32mI (231442) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (232402) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (232402) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (232402) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (233462) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (233462) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (233462) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (234522) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (234522) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (234522) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (235582) adc_control.c: ADC Avg Raw Value (12-bit): 675[0m
+[0;32mI (235582) adc_control.c: Calculated SPL: 61.12 dB[0m
+[0;32mI (235582) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (236642) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (236642) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (236642) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (237702) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (237702) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (237702) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (238762) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (238762) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (238762) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (239822) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (239822) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (239822) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (240882) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (240882) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (240882) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (241422) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (241452) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (241942) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (241942) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (241942) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (243002) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (243002) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (243002) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (244062) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (244062) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (244062) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (245122) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (245122) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (245122) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (246182) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (246182) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (246182) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (246452) i2c_control.c: Reading sensor data...[0m
+[0;32mI (246452) i2c_control.c: CO2: 1286 ppm[0m
+[0;32mI (246452) i2c_control.c: Temperature: 29.92°C[0m
+[0;32mI (246452) i2c_control.c: Humidity: 48.26%[0m
+[0;32mI (246452) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (247242) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (247242) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (247242) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (248302) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (248302) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (248302) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (249362) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (249362) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (249362) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (250422) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (250422) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (250422) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (251482) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (251482) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (251482) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (252542) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (252542) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (252542) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (253602) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (253602) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (253602) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (254662) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (254662) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (254662) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (255722) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (255722) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (255722) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (256432) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (256462) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (256782) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (256782) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (256782) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (257842) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (257842) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (257842) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (258902) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (258902) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (258902) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (259962) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (259962) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (259962) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (261022) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (261022) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (261022) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (261462) i2c_control.c: Reading sensor data...[0m
+[0;32mI (261462) i2c_control.c: CO2: 1255 ppm[0m
+[0;32mI (261462) i2c_control.c: Temperature: 30.02°C[0m
+[0;32mI (261462) i2c_control.c: Humidity: 48.12%[0m
+[0;32mI (261462) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (262082) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (262082) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (262082) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (263142) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (263142) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (263142) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (264202) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (264202) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (264202) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (265262) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (265262) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (265262) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (266322) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (266322) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (266322) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (267382) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (267382) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (267382) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (268442) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (268442) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (268442) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (269502) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (269502) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (269502) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (270562) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (270562) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (270562) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (271442) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (271472) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (271622) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (271622) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (271622) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (272682) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (272682) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (272682) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (273742) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (273742) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (273742) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (274802) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (274802) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (274802) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (275862) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (275862) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (275862) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (276472) i2c_control.c: Reading sensor data...[0m
+[0;32mI (276472) i2c_control.c: CO2: 1329 ppm[0m
+[0;32mI (276472) i2c_control.c: Temperature: 30.09°C[0m
+[0;32mI (276472) i2c_control.c: Humidity: 47.99%[0m
+[0;32mI (276472) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (276922) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (276922) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (276922) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (277982) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (277982) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (277982) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (279042) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (279042) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (279042) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (280102) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (280102) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (280102) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (281162) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (281162) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (281162) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (282222) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (282222) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (282222) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (283282) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (283282) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (283282) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (284342) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (284342) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (284342) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (285402) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (285402) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (285402) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (286452) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (286462) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (286462) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (286462) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (286482) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (287522) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (287522) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (287522) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (288582) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (288582) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (288582) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (289642) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (289642) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (289642) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (290702) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (290702) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (290702) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (291482) i2c_control.c: Reading sensor data...[0m
+[0;32mI (291482) i2c_control.c: CO2: 1272 ppm[0m
+[0;32mI (291482) i2c_control.c: Temperature: 30.17°C[0m
+[0;32mI (291482) i2c_control.c: Humidity: 47.72%[0m
+[0;32mI (291482) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (291762) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (291762) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (291762) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (292822) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (292822) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (292822) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (293882) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (293882) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (293882) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (294942) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (294942) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (294942) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (296002) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (296002) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (296002) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (297062) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (297062) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (297062) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (298122) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (298122) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (298122) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (299182) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (299182) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (299182) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (300242) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (300242) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (300242) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (301302) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (301302) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (301302) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (301462) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (301492) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (302362) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (302362) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (302362) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (303422) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (303422) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (303422) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (304482) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (304482) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (304482) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (305542) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (305542) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (305542) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (306492) i2c_control.c: Reading sensor data...[0m
+[0;32mI (306492) i2c_control.c: CO2: 1308 ppm[0m
+[0;32mI (306492) i2c_control.c: Temperature: 30.24°C[0m
+[0;32mI (306492) i2c_control.c: Humidity: 47.66%[0m
+[0;32mI (306492) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (306602) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (306602) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (306602) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (307662) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (307662) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (307662) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (308722) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (308722) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (308722) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (309782) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (309782) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (309782) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (310842) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (310842) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (310842) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (311902) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (311902) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (311902) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (312962) adc_control.c: ADC Avg Raw Value (12-bit): 674[0m
+[0;32mI (312962) adc_control.c: Calculated SPL: 61.11 dB[0m
+[0;32mI (312962) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (314022) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (314022) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (314022) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (315082) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (315082) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (315082) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (316142) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (316142) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (316142) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (316472) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (316502) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (317202) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (317202) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (317202) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (318262) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (318262) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (318262) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (319322) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (319322) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (319322) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (320382) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (320382) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (320382) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (321442) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (321442) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (321442) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (321502) i2c_control.c: Reading sensor data...[0m
+[0;32mI (321502) i2c_control.c: CO2: 1232 ppm[0m
+[0;32mI (321502) i2c_control.c: Temperature: 30.27°C[0m
+[0;32mI (321502) i2c_control.c: Humidity: 47.54%[0m
+[0;32mI (321502) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (322502) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (322502) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (322502) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (323562) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (323562) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (323562) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (324622) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (324622) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (324622) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (325682) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (325682) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (325682) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (326742) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (326742) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (326742) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (327802) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (327802) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (327802) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (328862) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (328862) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (328862) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (329922) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (329922) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (329922) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (330982) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (330982) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (330982) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (331482) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (331512) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (332042) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (332042) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (332042) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (333102) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (333102) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (333102) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (334162) adc_control.c: ADC Avg Raw Value (12-bit): 671[0m
+[0;32mI (334162) adc_control.c: Calculated SPL: 61.07 dB[0m
+[0;32mI (334162) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (335222) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (335222) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (335222) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (336282) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (336282) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (336282) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (336512) i2c_control.c: Reading sensor data...[0m
+[0;32mI (336512) i2c_control.c: CO2: 1300 ppm[0m
+[0;32mI (336512) i2c_control.c: Temperature: 30.18°C[0m
+[0;32mI (336512) i2c_control.c: Humidity: 47.65%[0m
+[0;32mI (336512) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (337342) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (337342) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (337342) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (338402) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (338402) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (338402) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (339462) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (339462) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (339462) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (340522) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (340522) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (340522) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (341582) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (341582) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (341582) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (342642) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (342642) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (342642) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (343702) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (343702) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (343702) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (344762) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (344762) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (344762) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (345822) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (345822) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (345822) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (346492) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (346522) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (346882) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (346882) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (346882) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (347942) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (347942) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (347942) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (349002) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (349002) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (349002) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (350062) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (350062) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (350062) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (351122) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (351122) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (351122) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (351522) i2c_control.c: Reading sensor data...[0m
+[0;32mI (351522) i2c_control.c: CO2: 1256 ppm[0m
+[0;32mI (351522) i2c_control.c: Temperature: 30.20°C[0m
+[0;32mI (351522) i2c_control.c: Humidity: 47.65%[0m
+[0;32mI (351522) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (352182) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (352182) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (352182) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (353242) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (353242) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (353242) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (354302) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (354302) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (354302) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (355362) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (355362) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (355362) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (356422) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (356422) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (356422) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (357482) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (357482) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (357482) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (358542) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (358542) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (358542) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (359602) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (359602) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (359602) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (360662) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (360662) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (360662) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (361502) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (361532) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (361722) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (361722) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (361722) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (362782) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (362782) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (362782) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (363842) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (363842) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (363842) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (364902) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (364902) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (364902) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (365962) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (365962) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (365962) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (366532) i2c_control.c: Reading sensor data...[0m
+[0;32mI (366532) i2c_control.c: CO2: 1287 ppm[0m
+[0;32mI (366532) i2c_control.c: Temperature: 30.20°C[0m
+[0;32mI (366532) i2c_control.c: Humidity: 47.59%[0m
+[0;32mI (366532) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (367022) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (367022) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (367022) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (368082) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (368082) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (368082) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (369142) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (369142) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (369142) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (370202) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (370202) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (370202) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (371262) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (371262) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (371262) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (372322) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (372322) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (372322) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (373382) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (373382) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (373382) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (374442) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (374442) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (374442) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (375502) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (375502) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (375502) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (376512) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (376542) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (376562) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (376562) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (376562) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (377622) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (377622) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (377622) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (378682) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (378682) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (378682) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (379742) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (379742) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (379742) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (380802) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (380802) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (380802) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (381542) i2c_control.c: Reading sensor data...[0m
+[0;32mI (381542) i2c_control.c: CO2: 1256 ppm[0m
+[0;32mI (381542) i2c_control.c: Temperature: 30.16°C[0m
+[0;32mI (381542) i2c_control.c: Humidity: 47.58%[0m
+[0;32mI (381542) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (381862) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (381862) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (381862) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (382922) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (382922) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (382922) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (383982) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (383982) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (383982) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (385042) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (385042) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (385042) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (386102) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (386102) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (386102) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (387162) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (387162) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (387162) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (388222) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (388222) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (388222) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (389282) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (389282) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (389282) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (390342) adc_control.c: ADC Avg Raw Value (12-bit): 672[0m
+[0;32mI (390342) adc_control.c: Calculated SPL: 61.08 dB[0m
+[0;32mI (390342) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (391402) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (391402) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (391402) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (391522) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (391552) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (392462) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (392462) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (392462) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (393522) adc_control.c: ADC Avg Raw Value (12-bit): 673[0m
+[0;32mI (393522) adc_control.c: Calculated SPL: 61.10 dB[0m
+[0;32mI (393522) adc_control.c: Successfully read and processed one frame of ADC data.[0m
