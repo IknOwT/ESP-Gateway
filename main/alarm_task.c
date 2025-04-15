@@ -4,7 +4,6 @@
 #include "esp_log.h"
 #include <stdarg.h>
 
-
 static const char *TAG = "alarm_task.c";
 
 // Define thresholds
