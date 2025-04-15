@@ -98,6 +98,12 @@ void adc_cont_read(void) {
     // Print the calculated SPL level
     ESP_LOGI(TAG, "Calculated SPL: %.2f dB", spl);
 
+    // 💾 Store the SPL in shared sensor_data
+    if (xSemaphoreTake(xSensorDataMutex, portMAX_DELAY)) {
+        sensor_data.noise_level = spl;
+        xSemaphoreGive(xSensorDataMutex);
+    }
+
     // Stop ADC continuous mode after reading the frame
     ret = adc_continuous_stop(adc_cont_handle);
     if (ret != ESP_OK) {

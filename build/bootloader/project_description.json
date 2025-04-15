@@ -1,7 +1,7 @@
 {
-    "version":            "1.2",
+    "version":            "1.1",
     "project_name":       "bootloader",
-    "project_version":    "v5.4.1",
+    "project_version":    "v5.4",
     "project_path":       "C:/esp/esp-idf/components/bootloader/subproject",
     "idf_path":           "C:/esp/esp-idf",
     "build_dir":          "C:/esp/esp-idf/myapps/ESP-Gateway/build/bootloader",
@@ -11,7 +11,7 @@
     "app_elf":            "bootloader.elf",
     "app_bin":            "bootloader.bin",
     "build_type":         "flash_app",
-    "git_revision":       "v5.4.1",
+    "git_revision":       "v5.4",
     "target":             "esp32",
     "rev":                "0",
     "min_rev":            "0",
@@ -400,7 +400,7 @@
             "dir": "C:/esp/esp-idf/components/bt",
             "lib": "__idf_bt",
             "reqs": [ "esp_timer", "esp_wifi" ],
-            "priv_reqs": [ "nvs_flash", "soc", "esp_pm", "esp_phy", "esp_coex", "mbedtls", "esp_driver_uart", "vfs", "esp_ringbuf", "esp_driver_spi", "esp_driver_gpio" ],
+            "priv_reqs": [ "nvs_flash", "soc", "esp_pm", "esp_phy", "esp_coex", "mbedtls", "esp_driver_uart", "vfs", "esp_ringbuf" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": []
@@ -1227,8 +1227,8 @@
             "prefix": "idf",
             "dir": "C:/esp/esp-idf/components/ieee802154",
             "lib": "__idf_ieee802154",
-            "reqs": [ "esp_coex" ],
-            "priv_reqs": [ "esp_phy", "driver", "esp_timer", "soc", "hal" ],
+            "reqs": [],
+            "priv_reqs": [ "esp_phy", "driver", "esp_timer", "esp_coex", "soc", "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1348,7 +1348,7 @@
             "dir": "C:/esp/esp-idf/components/openthread",
             "lib": "__idf_openthread",
             "reqs": [ "esp_netif", "lwip", "esp_driver_uart", "driver" ],
-            "priv_reqs": [ "console", "esp_coex", "esp_event", "esp_partition", "esp_timer", "ieee802154", "mbedtls", "nvs_flash" ],
+            "priv_reqs": [ "console", "esp_event", "esp_partition", "esp_timer", "ieee802154", "mbedtls", "nvs_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": []
@@ -1630,12 +1630,5 @@
             "include_dirs": [ ".", "micro-ecc" ]
         }
     },
-    "debug_prefix_map_gdbinit": "",
-    "gdbinit_files": {
-        "01_symbols": "C:/esp/esp-idf/myapps/ESP-Gateway/build/bootloader/gdbinit/symbols",
-        "02_prefix_map": "C:/esp/esp-idf/myapps/ESP-Gateway/build/bootloader/gdbinit/prefix_map",
-        "03_py_extensions": "C:/esp/esp-idf/myapps/ESP-Gateway/build/bootloader/gdbinit/py_extensions",
-        "04_connect": "C:/esp/esp-idf/myapps/ESP-Gateway/build/bootloader/gdbinit/connect"
-    },
-    "debug_arguments_openocd": "-f board/esp32-wrover-kit-3.3v.cfg"
+    "debug_prefix_map_gdbinit": ""
 }

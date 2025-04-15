@@ -1,10 +1,10 @@
 #ifndef PWM_CONTROL_H
 #define PWM_CONTROL_H
 
-#include "driver/ledc.h"
-#include "esp_log.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "driver/ledc.h"
+#include "esp_log.h"
 
 // PWM configuration parameters
 #define PWM_CHANNEL          LEDC_CHANNEL_0

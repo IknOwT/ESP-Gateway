@@ -83,6 +83,7 @@ C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/spiffs/libspiffs.a
 C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/gpio_control/libgpio_control.a
 C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/pwm_control/libpwm_control.a
+C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/sensor_data/libsensor_data.a
 C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/i2c_control/libi2c_control.a
 C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/adc_control/libadc_control.a
 C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/main/libmain.a

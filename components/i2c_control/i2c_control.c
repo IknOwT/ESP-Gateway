@@ -63,7 +63,7 @@ esp_err_t scd41_measure(void) {
     return ret;
 }
 
-esp_err_t scd41_read(void) {
+esp_err_t scd41_read(float *temperature, float *humidity) {
     uint8_t cmd[2] = { (SCD4x_CMD_READ >> 8) & 0xFF, SCD4x_CMD_READ & 0xFF };
 
     esp_err_t ret = i2c_master_write_to_device(I2C_MASTER_NUM, I2C_SCD4x_ADDR, cmd, sizeof(cmd), pdMS_TO_TICKS(1000));
@@ -87,12 +87,12 @@ esp_err_t scd41_read(void) {
     uint16_t raw_hum = ((uint16_t)response[6] << 8) | response[7];
 
     uint16_t co2 = raw_co2;  // CO2 is already in ppm
-    float temperature = -45.0f + 175.0f * ((float)raw_temp / 65535.0f);
-    float humidity = 100.0f * ((float)raw_hum / 65535.0f);
+    *temperature = -45.0f + 175.0f * ((float)raw_temp / 65535.0f);
+    *humidity = 100.0f * ((float)raw_hum / 65535.0f);
 
     ESP_LOGI(TAG, "CO2: %u ppm", co2);
-    ESP_LOGI(TAG, "Temperature: %.2f°C", temperature);
-    ESP_LOGI(TAG, "Humidity: %.2f%%", humidity);
+    ESP_LOGI(TAG, "Temperature: %.2f°C", *temperature);
+    ESP_LOGI(TAG, "Humidity: %.2f%%", *humidity);
 
     return ret;
 }
@@ -100,13 +100,28 @@ esp_err_t scd41_read(void) {
 // The task that reads the sensor periodically every 5 seconds
 void scd41_task(void *arg) {
     while (1) {
-        // Read from the sensor here
         scd41_wake_up();
-        vTaskDelay(pdMS_TO_TICKS(30)); // Wait for 5 seconds
-        scd41_measure();
-        vTaskDelay(pdMS_TO_TICKS(5000)); // Wait for 5 seconds
-        scd41_read();
+        vTaskDelay(pdMS_TO_TICKS(30)); // Sensor needs to wake up
+
+        scd41_measure();  // Starts measurement
+        vTaskDelay(pdMS_TO_TICKS(5000)); // Wait for measurement to be ready
+
+        float temperature = 0.0f;
+        float humidity = 0.0f;
+
+        if (scd41_read(&temperature, &humidity)) {  // Assuming this returns bool and gives us values
+            if (xSemaphoreTake(xSensorDataMutex, portMAX_DELAY)) {
+                sensor_data.temperature = temperature;
+                sensor_data.humidity = humidity;
+                xSemaphoreGive(xSensorDataMutex);
+            }
+
+            ESP_LOGI(TAG, "Updated Temp: %.2f°C, Humidity: %.2f%%", temperature, humidity);
+        } else {
+            ESP_LOGW(TAG, "Failed to read from SCD41");
+        }
+
         scd41_power_down();
-        vTaskDelay(pdMS_TO_TICKS(9970)); // Wait for 5 seconds
+        vTaskDelay(pdMS_TO_TICKS(9970)); // Total delay ≈ 15s
     }
 }

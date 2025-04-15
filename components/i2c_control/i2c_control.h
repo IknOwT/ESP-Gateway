@@ -1,7 +1,10 @@
 #ifndef I2C_CONTROL_H
 #define I2C_CONTROL_H
 
+#include "freertos/FreeRTOS.h"
+#include "freertos/semphr.h"
 #include "driver/i2c.h"
+#include "sensor_data.h"
 
 #define I2C_MASTER_SCL_IO    22      // Set SCL GPIO
 #define I2C_MASTER_SDA_IO    21      // Set SDA GPIO

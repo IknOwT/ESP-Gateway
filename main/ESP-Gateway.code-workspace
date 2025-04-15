@@ -28,7 +28,14 @@
 		"terminal.integrated.defaultProfile.windows": "Command Prompt",
 		"files.associations": {
 			"ledc.h": "c",
-			"gpio.h": "c"
+			"gpio.h": "c",
+			"task.h": "c",
+			"adc_control.h": "c",
+			"freertos.h": "c",
+			"stdio.h": "c",
+			"sensor_data.h": "c",
+			"alarm_task.h": "c",
+			"semphr.h": "c"
 		},
 	}
 }
