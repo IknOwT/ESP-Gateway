@@ -1,0 +1,164 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 15 2025 14:02:01[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 16MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c560h ( 50528) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=0001c588 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001c5ac vaddr=3ffb0000 size=02484h (  9348) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001ea38 vaddr=40080000 size=015e0h (  5600) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1a254h (107092) map[0m
+[0;32mI (163) esp_image: segment 5: paddr=0003a27c vaddr=400815e0 size=0cfe8h ( 53224) load[0m
+[0;32mI (190) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (190) boot: Disabling RNG early entropy source...[0m
+[0;32mI (201) cpu_start: Multicore app[0m
+[0;32mI (209) cpu_start: Pro cpu start user code[0m
+[0;32mI (209) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (209) app_init: Application information:[0m
+[0;32mI (209) app_init: Project name:     ESP-Gateway[0m
+[0;32mI (214) app_init: App version:      87a8cce-dirty[0m
+[0;32mI (218) app_init: Compile time:     Apr 16 2025 16:10:37[0m
+[0;32mI (223) app_init: ELF file SHA256:  cd678792d...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (231) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (235) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (239) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (243) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (249) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFB2DD8 len 0002D228 (180 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (270) heap_init: At 4008E5C8 len 00011A38 (70 KiB): IRAM[0m
+[0;32mI (277) spi_flash: detected chip: gd[0m
+[0;32mI (279) spi_flash: flash io: dio[0m
+[0;33mW (282) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (292) main_task: Started on CPU0[0m
+[0;32mI (302) main_task: Calling app_main()[0m
+[0;32mI (302) PWM_CONTROL: PWM initialized succesfully[0m
+[0;32mI (1252) i2c_control.c: I2C initialized successfully[0m
+[0;32mI (1252) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1252) adc_control.c: ADC continuous mode initialized successfully[0m
+[0;32mI (1252) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (1262) main_task: Returned from app_main()[0m
+[0;32mI (1292) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (1322) adc_control.c: Calculated SPL: 90.29 dB[0m
+[0;32mI (1322) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (2382) adc_control.c: Calculated SPL: 90.29 dB[0m
+[0;32mI (2382) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (3442) adc_control.c: Calculated SPL: 90.29 dB[0m
+[0;32mI (3442) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (4502) adc_control.c: Calculated SPL: 90.29 dB[0m
+[0;32mI (4502) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (5562) adc_control.c: Calculated SPL: 90.29 dB[0m
+[0;32mI (5562) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (6292) i2c_control.c: Reading sensor data...[0m
+[0;32mI (6292) i2c_control.c: Updated CO2: 779ppm, Temp: 24.56°C, Humidity: 57.83%[0m
+[0;32mI (6292) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (6622) adc_control.c: Calculated SPL: 90.28 dB[0m
+[0;32mI (6622) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (7682) adc_control.c: Calculated SPL: 90.29 dB[0m
+[0;32mI (7682) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (8742) adc_control.c: Calculated SPL: 90.27 dB[0m
+[0;32mI (8742) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (9802) adc_control.c: Calculated SPL: 90.28 dB[0m
+[0;32mI (9802) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (10862) adc_control.c: Calculated SPL: 90.28 dB[0m
+[0;32mI (10862) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (11922) adc_control.c: Calculated SPL: 90.29 dB[0m
+[0;32mI (11922) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (12982) adc_control.c: Calculated SPL: 90.29 dB[0m
+[0;32mI (12982) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (14042) adc_control.c: Calculated SPL: 90.29 dB[0m
+[0;32mI (14042) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (15102) adc_control.c: Calculated SPL: 90.29 dB[0m
+[0;32mI (15102) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (16162) adc_control.c: Calculated SPL: 90.29 dB[0m
+[0;32mI (16162) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (16262) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (16292) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (17222) adc_control.c: Calculated SPL: 90.28 dB[0m
+[0;32mI (17222) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (18282) adc_control.c: Calculated SPL: 90.29 dB[0m
+[0;32mI (18282) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (19342) adc_control.c: Calculated SPL: 90.29 dB[0m
+[0;32mI (19342) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (20402) adc_control.c: Calculated SPL: 90.29 dB[0m
+[0;32mI (20402) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (21292) i2c_control.c: Reading sensor data...[0m
+[0;32mI (21292) i2c_control.c: Updated CO2: 830ppm, Temp: 24.75°C, Humidity: 57.46%[0m
+[0;32mI (21292) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (21462) adc_control.c: Calculated SPL: 90.28 dB[0m
+[0;32mI (21462) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (22522) adc_control.c: Calculated SPL: 90.29 dB[0m
+[0;32mI (22522) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (23582) adc_control.c: Calculated SPL: 90.29 dB[0m
+[0;32mI (23582) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (24642) adc_control.c: Calculated SPL: 90.29 dB[0m
+[0;32mI (24642) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (25702) adc_control.c: Calculated SPL: 90.28 dB[0m
+[0;32mI (25702) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (26762) adc_control.c: Calculated SPL: 90.28 dB[0m
+[0;32mI (26762) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (27822) adc_control.c: Calculated SPL: 90.28 dB[0m
+[0;32mI (27822) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (28882) adc_control.c: Calculated SPL: 90.29 dB[0m
+[0;32mI (28882) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (29942) adc_control.c: Calculated SPL: 90.29 dB[0m
+[0;32mI (29942) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (31002) adc_control.c: Calculated SPL: 90.45 dB[0m
+[0;32mI (31002) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (31262) i2c_control.c: SCD41 wake up command sent successfully[0m
+[0;32mI (31292) i2c_control.c: SCD41 performing measurements...[0m
+[0;32mI (32062) adc_control.c: Calculated SPL: 90.06 dB[0m
+[0;32mI (32062) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (33122) adc_control.c: Calculated SPL: 90.63 dB[0m
+[0;32mI (33122) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (34182) adc_control.c: Calculated SPL: 90.45 dB[0m
+[0;32mI (34182) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (35242) adc_control.c: Calculated SPL: 90.35 dB[0m
+[0;32mI (35242) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (36292) i2c_control.c: Reading sensor data...[0m
+[0;32mI (36292) i2c_control.c: Updated CO2: 1985ppm, Temp: 25.02°C, Humidity: 57.00%[0m
+[0;32mI (36292) i2c_control.c: SCD41 power down command sent successfully[0m
+[0;32mI (36302) adc_control.c: Calculated SPL: 90.31 dB[0m
+[0;32mI (36302) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;33mW (37262) alarm_task.c: CO2 concentration too high! 1985ppm[0m
+[0;32mI (37362) adc_control.c: Calculated SPL: 90.33 dB[0m
+[0;32mI (37362) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (38422) adc_control.c: Calculated SPL: 90.33 dB[0m
+[0;32mI (38422) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;33mW (39262) alarm_task.c: CO2 concentration too high! 1985ppm[0m
+[0;32mI (39482) adc_control.c: Calculated SPL: 90.33 dB[0m
+[0;32mI (39482) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;32mI (40542) adc_control.c: Calculated SPL: 90.41 dB[0m
+[0;32mI (40542) adc_control.c: Successfully read and processed one frame of ADC data.[0m
+[0;33mW (41262) alarm_task.c: CO2 concentration too high! 1985ppm[0m
+[0;32mI (41602) adc_control.c: Calculated SPL: 90.32 dB[0m
+[0;32mI (41602) adc_control.c: Successfully read and processed one frame of ADC data.[0m

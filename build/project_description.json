@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "ESP-Gateway",
-    "project_version":    "60a8203-dirty",
+    "project_version":    "87a8cce-dirty",
     "project_path":       "C:/esp/esp-idf/myapps/ESP-Gateway",
     "idf_path":           "C:/esp/esp-idf",
     "build_dir":          "C:/esp/esp-idf/myapps/ESP-Gateway/build",

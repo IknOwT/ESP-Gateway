@@ -93,30 +93,31 @@ void buzzer_alert_tone(void *param) {
     }
 
     ledc_stop(LEDC_LOW_SPEED_MODE, PWM_CHANNEL0, 0);
+    vTaskDelete(NULL);
 }
 
 void led_alarm_pulse(void *param) {
-    const TickType_t duration = pdMS_TO_TICKS(60000);  // 1 minute
-    const TickType_t start_time = xTaskGetTickCount();
+    const int duty_on = (1 << PWM_RESOLUTION) - 1; // full brightness
+    const int duty_off = 0;
+    const int pulse_delay_ms = 300; // on/off interval
+
+    TickType_t start_time = xTaskGetTickCount();
+    TickType_t duration = pdMS_TO_TICKS(60000); // 1 minute
 
     while ((xTaskGetTickCount() - start_time) < duration) {
-        // Fade in
-        for (int duty = 0; duty <= 255; duty += 15) {
-            ledc_set_duty(LEDC_LOW_SPEED_MODE, PWM_CHANNEL1, duty);
-            ledc_update_duty(LEDC_LOW_SPEED_MODE, PWM_CHANNEL1);
-            vTaskDelay(pdMS_TO_TICKS(10));
-        }
+        // LED ON
+        ledc_set_duty(LEDC_LOW_SPEED_MODE, PWM_CHANNEL1, duty_on);
+        ledc_update_duty(LEDC_LOW_SPEED_MODE, PWM_CHANNEL1);
+        vTaskDelay(pdMS_TO_TICKS(pulse_delay_ms));
 
-        // Fade out
-        for (int duty = 255; duty >= 0; duty -= 15) {
-            ledc_set_duty(LEDC_LOW_SPEED_MODE, PWM_CHANNEL1, duty);
-            ledc_update_duty(LEDC_LOW_SPEED_MODE, PWM_CHANNEL1);
-            vTaskDelay(pdMS_TO_TICKS(10));
-        }
-
-        vTaskDelay(pdMS_TO_TICKS(100));  // Pause briefly between pulses
+        // LED OFF
+        ledc_set_duty(LEDC_LOW_SPEED_MODE, PWM_CHANNEL1, duty_off);
+        ledc_update_duty(LEDC_LOW_SPEED_MODE, PWM_CHANNEL1);
+        vTaskDelay(pdMS_TO_TICKS(pulse_delay_ms));
     }
 
-    // Turn off LED after alarm ends
-    ledc_stop(LEDC_LOW_SPEED_MODE, PWM_CHANNEL1, 0);
+    // Turn off LED after alarm
+    ledc_set_duty(LEDC_LOW_SPEED_MODE, PWM_CHANNEL1, 0);
+    ledc_update_duty(LEDC_LOW_SPEED_MODE, PWM_CHANNEL1);
+    vTaskDelete(NULL);
 }
