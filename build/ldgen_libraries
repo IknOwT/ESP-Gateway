@@ -86,4 +86,5 @@ C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/pwm_control/libpwm_control.a
 C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/sensor_data/libsensor_data.a
 C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/i2c_control/libi2c_control.a
 C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/adc_control/libadc_control.a
+C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/alert_status/libalert_status.a
 C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/main/libmain.a

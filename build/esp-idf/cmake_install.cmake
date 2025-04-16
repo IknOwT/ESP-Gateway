@@ -574,6 +574,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/alert_status/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/main/cmake_install.cmake")
 endif()
 

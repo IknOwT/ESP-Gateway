@@ -1,3 +1,12 @@
+#include <stdio.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <inttypes.h>
+#include <math.h>
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "freertos/semphr.h"
+#include "esp_log.h"
 #include "adc_control.h"
 
 adc_continuous_handle_t adc_cont_handle = NULL;
@@ -98,7 +107,7 @@ void adc_cont_read(void) {
     // Print the calculated SPL level
     ESP_LOGI(TAG, "Calculated SPL: %.2f dB", spl);
 
-    // 💾 Store the SPL in shared sensor_data
+    // Store the SPL in shared sensor_data
     if (xSemaphoreTake(xSensorDataMutex, portMAX_DELAY)) {
         sensor_data.noise_level = spl;
         xSemaphoreGive(xSensorDataMutex);

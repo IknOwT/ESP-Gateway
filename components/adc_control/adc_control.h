@@ -1,13 +1,7 @@
 #ifndef ADC_CONTROL_H
 #define ADC_CONTROL_H
 
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
-#include "freertos/semphr.h"
-#include "esp_log.h"
-#include <inttypes.h>
 #include "esp_adc/adc_continuous.h"
-#include <math.h>
 #include "sensor_data.h"
 
 #define ADC_BUF_SIZE         2048      // fits 1 frame of adc data

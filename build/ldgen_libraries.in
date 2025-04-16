@@ -86,4 +86,5 @@ $<TARGET_FILE:__idf_pwm_control>
 $<TARGET_FILE:__idf_sensor_data>
 $<TARGET_FILE:__idf_i2c_control>
 $<TARGET_FILE:__idf_adc_control>
+$<TARGET_FILE:__idf_alert_status>
 $<TARGET_FILE:__idf_main>

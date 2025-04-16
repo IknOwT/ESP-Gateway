@@ -859,6 +859,13 @@ C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/adc_control/CMakeFiles/list_inst
 C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/adc_control/CMakeFiles/install.dir
 C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/adc_control/CMakeFiles/install/local.dir
 C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/adc_control/CMakeFiles/install/strip.dir
+C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/alert_status/CMakeFiles/__idf_alert_status.dir
+C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/alert_status/CMakeFiles/edit_cache.dir
+C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/alert_status/CMakeFiles/rebuild_cache.dir
+C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/alert_status/CMakeFiles/list_install_components.dir
+C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/alert_status/CMakeFiles/install.dir
+C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/alert_status/CMakeFiles/install/local.dir
+C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/alert_status/CMakeFiles/install/strip.dir
 C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/main/CMakeFiles/__idf_main.dir
 C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/main/CMakeFiles/edit_cache.dir
 C:/esp/esp-idf/myapps/ESP-Gateway/build/esp-idf/main/CMakeFiles/rebuild_cache.dir

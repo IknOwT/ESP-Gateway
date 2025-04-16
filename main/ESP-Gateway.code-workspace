@@ -35,7 +35,9 @@
 			"stdio.h": "c",
 			"sensor_data.h": "c",
 			"alarm_task.h": "c",
-			"semphr.h": "c"
+			"semphr.h": "c",
+			"adc_continuous.h": "c",
+			"i2c_control.h": "c"
 		},
 	}
 }

@@ -1,5 +1,11 @@
-#include "i2c_control.h"
+#include <stdio.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "freertos/semphr.h"
 #include "esp_log.h"
+#include "i2c_control.h"
 
 static const char *TAG = "i2c_control.c";
 
@@ -63,7 +69,7 @@ esp_err_t scd41_measure(void) {
     return ret;
 }
 
-esp_err_t scd41_read(float *temperature, float *humidity) {
+esp_err_t scd41_read(uint16_t *co2, float *temperature, float *humidity) {
     uint8_t cmd[2] = { (SCD4x_CMD_READ >> 8) & 0xFF, SCD4x_CMD_READ & 0xFF };
 
     esp_err_t ret = i2c_master_write_to_device(I2C_MASTER_NUM, I2C_SCD4x_ADDR, cmd, sizeof(cmd), pdMS_TO_TICKS(1000));
@@ -86,13 +92,13 @@ esp_err_t scd41_read(float *temperature, float *humidity) {
     uint16_t raw_temp = ((uint16_t)response[3] << 8) | response[4];
     uint16_t raw_hum = ((uint16_t)response[6] << 8) | response[7];
 
-    uint16_t co2 = raw_co2;  // CO2 is already in ppm
+    *co2 = raw_co2;  // CO2 is already in ppm
     *temperature = -45.0f + 175.0f * ((float)raw_temp / 65535.0f);
     *humidity = 100.0f * ((float)raw_hum / 65535.0f);
 
-    ESP_LOGI(TAG, "CO2: %u ppm", co2);
-    ESP_LOGI(TAG, "Temperature: %.2f°C", *temperature);
-    ESP_LOGI(TAG, "Humidity: %.2f%%", *humidity);
+    //ESP_LOGI(TAG, "CO2: %u ppm", *co2);
+    //ESP_LOGI(TAG, "Temperature: %.2f°C", *temperature);
+    //ESP_LOGI(TAG, "Humidity: %.2f%%", *humidity);
 
     return ret;
 }
@@ -106,19 +112,18 @@ void scd41_task(void *arg) {
         scd41_measure();  // Starts measurement
         vTaskDelay(pdMS_TO_TICKS(5000)); // Wait for measurement to be ready
 
+        uint16_t co2 = 0;
         float temperature = 0.0f;
         float humidity = 0.0f;
 
-        if (scd41_read(&temperature, &humidity)) {  // Assuming this returns bool and gives us values
-            if (xSemaphoreTake(xSensorDataMutex, portMAX_DELAY)) {
-                sensor_data.temperature = temperature;
-                sensor_data.humidity = humidity;
-                xSemaphoreGive(xSensorDataMutex);
-            }
+        scd41_read(&co2, &temperature, &humidity);
 
-            ESP_LOGI(TAG, "Updated Temp: %.2f°C, Humidity: %.2f%%", temperature, humidity);
-        } else {
-            ESP_LOGW(TAG, "Failed to read from SCD41");
+        if (xSemaphoreTake(xSensorDataMutex, portMAX_DELAY)) {
+            sensor_data.CO2 = co2;
+            sensor_data.temperature = temperature;
+            sensor_data.humidity = humidity;
+            xSemaphoreGive(xSensorDataMutex);
+            ESP_LOGI(TAG, "Updated CO2: %uppm, Temp: %.2f°C, Humidity: %.2f%%", co2, temperature, humidity);
         }
 
         scd41_power_down();
